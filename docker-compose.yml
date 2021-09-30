@@ -2,13 +2,13 @@ version: "3"
 services:
   hapi-fhir-jpaserver-start:
     build: .
-    container_name: hapi-fhir-jpaserver-start
+    container_name: hapi-fhir-test-pct-ehr
     restart: on-failure
     ports:
       - "8080:8080"
   hapi-fhir-mysql:
     image: mysql:latest
-    container_name: hapi-fhir-mysql
+    container_name: hapi-fhir-mysql-ehr
     #https://dev.mysql.com/doc/refman/8.0/en/identifier-case-sensitivity.html
     command: --lower_case_table_names=1
     restart: always
