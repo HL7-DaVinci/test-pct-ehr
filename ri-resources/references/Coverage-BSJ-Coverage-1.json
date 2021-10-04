@@ -1,0 +1,37 @@
+{
+  "resourceType": "Coverage",
+  "id": "BSJ-Coverage-1",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>subscriber</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>subscriberId</b>: 123456789</p><p><b>beneficiary</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>period</b>: 2020-12-01 --&gt; 2021-11-30</p><p><b>payor</b>: <a href=\"Organization-Insurer-Org-1.html\">Generated Summary: Electronic Transmitter Identification Number: ETIN-70010001; active; name: Blue Cross Blue Shield</a></p><h3>Classes</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">plan</span></td><td>Blue Advantage HMO</td></tr></table></div>"
+  },
+  "status": "active",
+  "subscriber": {
+    "reference": "Patient/patientBSJ1"
+  },
+  "subscriberId": "123456789",
+  "beneficiary": {
+    "reference": "Patient/patientBSJ1"
+  },
+  "period": {
+    "start": "2020-12-01",
+    "end": "2021-11-30"
+  },
+  "payor": [
+    {
+      "reference": "Organization/Insurer-Org-1"
+    }
+  ],
+  "class": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "plan"
+          }
+        ]
+      },
+      "value": "Blue Advantage HMO"
+    }
+  ]
+}

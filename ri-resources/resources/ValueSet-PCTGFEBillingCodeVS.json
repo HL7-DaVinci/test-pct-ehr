@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "PCTGFEBillingCodeVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-PCTGFEBillingCS.html\"><code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEBillingCS</code></a></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/davinci-pct/ValueSet/PCTGFEBillingCodeVS",
+  "version": "0.1.0",
+  "name": "PCTGFEBillingCodeVS",
+  "title": "PCT GFE Billing Code Value Set",
+  "status": "active",
+  "date": "2021-09-08T03:27:28+00:00",
+  "description": "GFE billing codes ...",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEBillingCS"
+      }
+    ]
+  }
+}

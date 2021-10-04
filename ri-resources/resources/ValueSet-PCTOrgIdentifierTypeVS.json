@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "id": "PCTOrgIdentifierTypeVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-identifier-type.html\">http://hl7.org/fhir/ValueSet/identifier-type</a></li><li>Include all codes defined in <a href=\"CodeSystem-PCTOrgIdentifierTypeCS.html\"><code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTOrgIdentifierTypeCS</code></a></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/davinci-pct/ValueSet/PCTOrgIdentifierTypeVS",
+  "version": "0.1.0",
+  "name": "PCTOrgIdentifierTypeVS",
+  "title": "PCT Organization Identifier Type Value Set",
+  "status": "active",
+  "date": "2021-09-08T03:27:28+00:00",
+  "description": "Codes to specify the type of identifiers for organizations to indicate usage for a specific purpose",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "copyright": "This Valueset is not copyrighted.",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/identifier-type"
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTOrgIdentifierTypeCS"
+      }
+    ]
+  }
+}

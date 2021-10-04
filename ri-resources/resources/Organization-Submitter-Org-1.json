@@ -1,0 +1,28 @@
+{
+  "resourceType": "Organization",
+  "id": "Submitter-Org-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/davinci-pct-organization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Electronic Transmitter Identification Number: ETIN-10010001</p><p><b>active</b>: true</p><p><b>name</b>: GFE Service Help INC.</p></div>"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTOrgIdentifierTypeCS",
+            "code": "ETIN"
+          }
+        ]
+      },
+      "value": "ETIN-10010001"
+    }
+  ],
+  "active": true,
+  "name": "GFE Service Help INC."
+}
