@@ -7,7 +7,7 @@ sleep = True
 duration = 1
 
 # Post the Bundle
-if len(sys.argv) > 1
+if len(sys.argv) > 1:
     base_url = sys.argv[1]
 else:
     base_url = 'http://localhost:8081/fhir'
