@@ -10,7 +10,7 @@ duration = 1
 if len(sys.argv) > 1:
     base_url = sys.argv[1]
 else:
-    base_url = 'http://localhost:8081/fhir'
+    base_url = 'https://davinci-pct-ehr.logicahealth.org/fhir'
 
 def post_resources(prefix):
     filenames = next(walk(prefix), (None, None, []))[2]  # [] if no file
@@ -25,9 +25,14 @@ def post_resources(prefix):
         print(id)
         r = requests.put(url, data=open(prefix + name, 'rb'), headers=headers)
         print(url)
+        print(r)
+        print(r.text)
+        time.sleep(1)
 
 post_resources('./resources/')
 time.sleep(5)
 post_resources('./references/')
-time.sleep(2)
+time.sleep(5)
 post_resources('./Other/')
+time.sleep(5)
+post_resources('./gfe/')

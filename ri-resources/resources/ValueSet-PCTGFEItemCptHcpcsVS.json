@@ -1,0 +1,64 @@
+{
+  "resourceType": "ValueSet",
+  "id": "PCTGFEItemCptHcpcsVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-cpt-4.html\"><code>http://www.ama-assn.org/go/cpt</code></a></li><li>Include all codes defined in <code>http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets</code></li><li>Include all codes defined in <a href=\"CodeSystem-PCTGFEItemCptHcpcsCS.html\"><code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemCptHcpcsCS</code></a></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/davinci-pct/ValueSet/PCTGFEItemCptHcpcsVS",
+  "version": "0.1.0",
+  "name": "PCTGFEItemCptHcpcsVS",
+  "title": "PCT GFE Item CPT and HCPCS Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set",
+  "status": "active",
+  "date": "2021-10-20T12:50:14+00:00",
+  "publisher": "HL7 International - Financial Management Work Group",
+  "contact": [
+    {
+      "name": "HL7 International - Financial Management Work Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/fm"
+        },
+        {
+          "system": "email",
+          "value": "fmlists@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "TBD",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:TBD@exmple.org"
+        }
+      ]
+    }
+  ],
+  "description": "Codes to report medical procedures and services under public and private health insurance programs",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "copyright": "This Valueset is not copyrighted.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt"
+      },
+      {
+        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets"
+      },
+      {
+        "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemCptHcpcsCS"
+      }
+    ]
+  }
+}
