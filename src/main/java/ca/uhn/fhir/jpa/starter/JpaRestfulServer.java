@@ -5,7 +5,6 @@ import org.springframework.context.annotation.Import;
 
 import javax.servlet.ServletException;
 
-import ca.uhn.fhir.jpa.starter.interceptors.GFEInterceptor;
 
 @Import(AppProperties.class)
 public class JpaRestfulServer extends BaseJpaRestfulServer {
@@ -22,9 +21,7 @@ public class JpaRestfulServer extends BaseJpaRestfulServer {
   @Override
   protected void initialize() throws ServletException {
     super.initialize();
-
     // Add your own customization here
-    //this.registerInterceptor(new GFEInterceptor());
   }
 
 }

@@ -1,0 +1,53 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "pracRole002",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/davinci-pct-practitionerrole"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-prac002.html\">Generated Summary: National provider identifier: 1234567995; active: true; Christine Curie; Phone: 781-232-3232; gender: female</a></p><p><b>organization</b>: <a href=\"Organization-org1002.html\">Generated Summary: National provider identifier: 1234568095, Tax ID number: TAX-3211001; active: true; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: Boston Radiology Center; Phone: 781-232-3200</a></p><p><b>code</b>: <span title=\"Codes: {http://nucc.org/provider-taxonomy 247100000X}\">Radiologic Technologist</span></p><p><b>specialty</b>: <span title=\"Codes: {http://nucc.org/provider-taxonomy 261QM1200X}\">Magnetic Resonance Imaging (MRI) Clinic/Center</span></p><p><b>location</b>: <a href=\"Location-Provider-Org-Loc-2.html\">Generated Summary: status: active; name: Boston Radiology Center</a></p><p><b>telecom</b>: ph: 781-232-3232</p></div>"
+  },
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/prac002"
+  },
+  "organization": {
+    "reference": "Organization/org1002"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "247100000X",
+          "display": "Radiologic Technologist"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "261QM1200X",
+          "display": "Magnetic Resonance Imaging (MRI) Clinic/Center"
+        }
+      ]
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/Provider-Org-Loc-2"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "781-232-3232"
+    }
+  ]
+}

@@ -59,7 +59,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import ca.uhn.fhir.jpa.starter.interceptors.GFEInterceptor;
+import ca.uhn.fhir.jpa.starter.interceptors.DataInterceptor;
 
 
 public class BaseJpaRestfulServer extends RestfulServer {
@@ -230,7 +230,11 @@ public class BaseJpaRestfulServer extends RestfulServer {
     loggingInterceptor.setErrorMessageFormat(appProperties.getLogger().getError_format());
     loggingInterceptor.setLogExceptions(appProperties.getLogger().getLog_exceptions());
     this.registerInterceptor(loggingInterceptor);
+    DataInterceptor di = new DataInterceptor(ctx);
+    this.registerInterceptor(di);
     // this.registerInterceptor(new GFEInterceptor());
+
+    // DataLoader dl = new DataLoader(ctx);
 
     /*
      * If you are hosting this server at a specific DNS name, the server will try to

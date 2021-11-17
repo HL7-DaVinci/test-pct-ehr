@@ -1,0 +1,70 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "PCTProcedureSurgicalCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTProcedureSurgicalCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">153001<a name=\"PCTProcedureSurgicalCS-153001\"> </a></td><td>PROC-1</td><td>Procedure 1</td></tr><tr><td style=\"white-space:nowrap\">153002<a name=\"PCTProcedureSurgicalCS-153002\"> </a></td><td>PROC-2</td><td>Procedure 2</td></tr><tr><td style=\"white-space:nowrap\">153003<a name=\"PCTProcedureSurgicalCS-153003\"> </a></td><td>PROC-3</td><td>Procedure 3</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTProcedureSurgicalCS",
+  "version": "0.1.0",
+  "name": "PCTProcedureSurgicalCS",
+  "title": "PCT Procedure Surgical Code System",
+  "status": "active",
+  "date": "2021-11-10T04:40:49+00:00",
+  "publisher": "HL7 International - Financial Management Work Group",
+  "contact": [
+    {
+      "name": "HL7 International - Financial Management Work Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/fm"
+        },
+        {
+          "system": "email",
+          "value": "fmlists@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "TBD",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:TBD@exmple.org"
+        }
+      ]
+    }
+  ],
+  "description": "Defining codes for the classification of surgical procedure types",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "copyright": "This CodeSystem is not copyrighted.",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "153001",
+      "display": "PROC-1",
+      "definition": "Procedure 1"
+    },
+    {
+      "code": "153002",
+      "display": "PROC-2",
+      "definition": "Procedure 2"
+    },
+    {
+      "code": "153003",
+      "display": "PROC-3",
+      "definition": "Procedure 3"
+    }
+  ]
+}

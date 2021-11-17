@@ -1,0 +1,68 @@
+{
+  "resourceType": "Organization",
+  "id": "Submitter-Org-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/davinci-pct-organization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Electronic Transmitter Identification Number: ETIN-10010301</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTOrganizationTypeCS institutional-submitter}\">Institutional GFE Submitter</span></p><p><b>name</b>: GFE Service Help INC.</p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Purpose</b></td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTOrgContactPurposeType gferelated}\">GFE-related</span></td><td>Clara Sender</td><td>ph: 781-632-3209(WORK), <a href=\"mailto:csender@GFEServiceHelp.com\">csender@GFEServiceHelp.com</a></td></tr></table></div>"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTOrgIdentifierTypeCS",
+            "code": "ETIN",
+            "display": "Electronic Transmitter Identification Number"
+          }
+        ]
+      },
+      "value": "ETIN-10010301"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTOrganizationTypeCS",
+          "code": "institutional-submitter",
+          "display": "Institutional GFE Submitter"
+        }
+      ]
+    }
+  ],
+  "name": "GFE Service Help INC.",
+  "contact": [
+    {
+      "purpose": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTOrgContactPurposeType",
+            "code": "gferelated",
+            "display": "GFE-related"
+          }
+        ]
+      },
+      "name": {
+        "text": "Clara Sender"
+      },
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "781-632-3209",
+          "use": "work"
+        },
+        {
+          "system": "email",
+          "value": "csender@GFEServiceHelp.com",
+          "use": "work"
+        }
+      ]
+    }
+  ]
+}

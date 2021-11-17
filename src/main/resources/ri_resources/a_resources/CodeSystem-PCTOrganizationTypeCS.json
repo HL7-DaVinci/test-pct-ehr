@@ -1,0 +1,70 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "PCTOrganizationTypeCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTOrganizationTypeCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">institutional-submitter<a name=\"PCTOrganizationTypeCS-institutional-submitter\"> </a></td><td>Institutional GFE Submitter</td><td>Institutional GFE Submitter</td></tr><tr><td style=\"white-space:nowrap\">professional-submitter<a name=\"PCTOrganizationTypeCS-professional-submitter\"> </a></td><td>Professional GFE Submitter</td><td>Professional GFE Submitter</td></tr><tr><td style=\"white-space:nowrap\">billing-provider<a name=\"PCTOrganizationTypeCS-billing-provider\"> </a></td><td>Billing Provider</td><td>Billing Provider</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTOrganizationTypeCS",
+  "version": "0.1.0",
+  "name": "PCTOrganizationTypeCS",
+  "title": "PCT Organization Type Code System",
+  "status": "active",
+  "date": "2021-11-10T04:40:49+00:00",
+  "publisher": "HL7 International - Financial Management Work Group",
+  "contact": [
+    {
+      "name": "HL7 International - Financial Management Work Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/fm"
+        },
+        {
+          "system": "email",
+          "value": "fmlists@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "TBD",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:TBD@exmple.org"
+        }
+      ]
+    }
+  ],
+  "description": "Organization Type codes for describing the type of organizations involved in the PCT GFE process",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "copyright": "This CodeSystem is not copyrighted.",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "institutional-submitter",
+      "display": "Institutional GFE Submitter",
+      "definition": "Institutional GFE Submitter"
+    },
+    {
+      "code": "professional-submitter",
+      "display": "Professional GFE Submitter",
+      "definition": "Professional GFE Submitter"
+    },
+    {
+      "code": "billing-provider",
+      "display": "Billing Provider",
+      "definition": "Billing Provider"
+    }
+  ]
+}

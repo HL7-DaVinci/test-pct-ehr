@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "PCTGFEItemCptHcpcsCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemCptHcpcsCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">33502<a name=\"PCTGFEItemCptHcpcsCS-33502\"> </a></td><td>Some CPT Code 1</td><td>This mock code is for testing purpose only</td></tr><tr><td style=\"white-space:nowrap\">34503<a name=\"PCTGFEItemCptHcpcsCS-34503\"> </a></td><td>Some CPT Code 2</td><td>This mock code is for testing purpose only</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemCptHcpcsCS",
+  "version": "0.1.0",
+  "name": "PCTGFEItemCptHcpcsCS",
+  "title": "PCT GFE Item CPT and HCPCS Code System",
+  "status": "active",
+  "date": "2021-11-10T04:40:49+00:00",
+  "publisher": "HL7 International - Financial Management Work Group",
+  "contact": [
+    {
+      "name": "HL7 International - Financial Management Work Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/fm"
+        },
+        {
+          "system": "email",
+          "value": "fmlists@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "TBD",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:TBD@exmple.org"
+        }
+      ]
+    }
+  ],
+  "description": "Defining codes to report medical procedures and services under public and private health insurance programs",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "copyright": "This CodeSystem is not copyrighted.",
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "33502",
+      "display": "Some CPT Code 1",
+      "definition": "This mock code is for testing purpose only"
+    },
+    {
+      "code": "34503",
+      "display": "Some CPT Code 2",
+      "definition": "This mock code is for testing purpose only"
+    }
+  ]
+}

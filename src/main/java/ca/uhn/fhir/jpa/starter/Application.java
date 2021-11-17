@@ -26,9 +26,7 @@ import org.springframework.web.servlet.DispatcherServlet;
 @SpringBootApplication(exclude = {ElasticsearchRestClientAutoConfiguration.class})
 @Import({SubscriptionSubmitterConfig.class, SubscriptionProcessorConfig.class, SubscriptionChannelConfig.class, WebsocketDispatcherConfig.class, MdmConfig.class})
 public class Application extends SpringBootServletInitializer {
-
   public static void main(String[] args) {
-
     System.setProperty("spring.batch.job.enabled", "false");
     SpringApplication.run(Application.class, args);
 
