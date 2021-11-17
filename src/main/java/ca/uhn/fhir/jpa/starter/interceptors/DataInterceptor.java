@@ -46,7 +46,7 @@ import ca.uhn.fhir.jpa.starter.utils.FileLoader;
  */
 @Interceptor
 public class DataInterceptor {
-   private final Logger myLogger = LoggerFactory.getLogger(GFEInterceptor.class.getName());
+   private final Logger myLogger = LoggerFactory.getLogger(DataInterceptor.class.getName());
 
    private String baseUrl = "https://davinci-pct-ehr.logicahealth.org";//"http://localhost:8080";//
 
