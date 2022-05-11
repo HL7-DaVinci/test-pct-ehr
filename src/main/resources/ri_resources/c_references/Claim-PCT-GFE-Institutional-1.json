@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>GFESubmitter</b>: <a href=\"Organization-Submitter-Org-1.html\">Generated Summary: Electronic Transmitter Identification Number: ETIN-10010301; active: true; <span title=\"Codes: {http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTOrganizationTypeCS institutional-submitter}\">Institutional GFE Submitter</span>; name: GFE Service Help INC.</a></p><p><b>GFEProviderAssignedIdentifier</b>: id: GFEProviderAssignedID0001</p><p><b>ReferralNumber</b>: REF12022002-121</p><p><b>ProviderEventMethodology</b>: EEMM1021</p><p><b>InterTransIdentifier</b>: id: InterTransID0001</p><p><b>PlannedPeriodOfService</b>: 2021-10-31</p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span></p><p><b>use</b>: predetermination</p><p><b>patient</b>: <a href=\"Patient-patient1001.html\">Generated Summary: Member Number: 12345, Employee number: 667788; Eve Betterhalf; Phone: 781-949-4949; gender: female; birthDate: 1955-07-23; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus U}\">unmarried</span></a></p><p><b>created</b>: 2021-10-05</p><p><b>insurer</b>: <a href=\"Organization-org1001.html\">Generated Summary: Electronic Transmitter Identification Number: ETIN-3200002; active: true; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type pay}\">Payer</span>; name: Umbrella Insurance Company; Phone: 860-547-5001</a></p><p><b>provider</b>: <a href=\"Organization-org1002.html\">Generated Summary: National provider identifier: 1234568095, Tax ID number: TAX-3211001; active: true; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: Boston Radiology Center; Phone: 781-232-3200</a></p><p><b>priority</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span></p><h3>Payees</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/payeetype provider}\">Provider</span></td></tr></table><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td><td><b>Type</b></td><td><b>PackageCode</b></td></tr><tr><td>*</td><td>1</td><td><span title=\"Codes: {http://hl7.org/fhir/sid/icd-10-cm S06.30}\">Unspecified focal traumatic brain injury</span></td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/ex-diagnosistype principal}\">Principal Diagnosis</span></td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/ex-diagnosisrelatedgroup 400}\">Head trauma - concussion</span></td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td><a href=\"Coverage-coverage1001.html\">Generated Summary: status: active; subscriberId: PFP123450000; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\">Self</span>; period: 2021-01-01 --&gt; 2022-01-01</a></td></tr></table><blockquote><p><b>item</b></p><p><b>EstimatedDateOfService</b>: 2021-10-31</p><p><b>sequence</b>: 1</p><p><b>revenue</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemRevenueCS 2011}\">Revenue Code 1</span></p><p><b>productOrService</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemCptHcpcsCS 33502}\">Some CPT Code 1</span></p><p><b>modifier</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemCptHcpcsCS 34503}\">Some CPT Code 2</span></p><p><b>quantity</b>: 1</p></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PCT-GFE-Institutional-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-pct-gfe-Institutional.html\">PCT Good Faith Estimate Institutional</a></p></div><p><b>GFESubmitter</b>: <a href=\"Organization-Submitter-Org-1.html\">Organization/Submitter-Org-1</a> \"GFE Service Help INC.\"</p><p><b>GFEProviderAssignedIdentifier</b>: id: GFEProviderAssignedID0001</p><p><b>ProviderEventMethodology</b>: EEMM1021</p><p><b>InterTransIdentifier</b>: id: InterTransID0001</p><blockquote><p><b>GFEServiceLinkingInfo</b></p><p><b>value</b>: 223452-2342-2435-008001</p><p><b>value</b>: 2021-10-31</p></blockquote><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claim-type.html\">Claim Type Codes</a>#institutional)</span></p><p><b>use</b>: predetermination</p><p><b>patient</b>: <a href=\"Patient-patient1001.html\">Patient/patient1001</a> \" BETTERHALF\"</p><p><b>created</b>: 2021-10-05</p><p><b>insurer</b>: <a href=\"Organization-org1001.html\">Organization/org1001</a> \"Umbrella Insurance Company\"</p><p><b>provider</b>: <a href=\"Organization-org1002.html\">Organization/org1002</a> \"Boston Radiology Center\"</p><p><b>priority</b>: Normal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-processpriority.html\">Process Priority Codes</a>#normal)</span></p><h3>Payees</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-payeetype.html\">ClaimPayeeTypeCodes</a>#provider)</span></td></tr></table><p><b>referral</b>: <span>: Referral Number</span></p><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td><td><b>Type</b></td><td><b>PackageCode</b></td></tr><tr><td>*</td><td>1</td><td>Unspecified focal traumatic brain injury <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#S06.30)</span></td><td>Principal Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-ex-diagnosistype.html\">Example Diagnosis Type Codes</a>#principal)</span></td><td>Head trauma - concussion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-ex-diagnosisrelatedgroup.html\">Example Diagnosis Related Group Codes</a>#400)</span></td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td><a href=\"Coverage-coverage1001.html\">Coverage/coverage1001</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>revenue</b>: Revenue Code 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-PCTGFEItemRevenueCS.html\">PCT GFE Item Revenue Code System</a>#2011)</span></p><p><b>productOrService</b>: Some CPT Code 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-PCTGFEItemProcedureCodes.html\">PCT GFE Item Procedure Code System</a>#33502)</span></p><p><b>modifier</b>: Some CPT Code 2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-PCTGFEItemProcedureCodes.html\">PCT GFE Item Procedure Code System</a>#34503)</span></p><p><b>quantity</b>: 1</p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Sequence</b></td><td><b>ProductOrService</b></td></tr><tr><td>*</td><td></td><td>1</td><td>nitroglycerin  (product) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ndc.html\">National drug codes</a>#47781-457)</span></td></tr></table></blockquote></div>"
   },
   "extension": [
     {
@@ -24,10 +24,6 @@
       }
     },
     {
-      "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/referralNumber",
-      "valueString": "REF12022002-121"
-    },
-    {
       "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/providerEventMethodology",
       "valueString": "EEMM1021"
     },
@@ -38,8 +34,17 @@
       }
     },
     {
-      "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/plannedPeriodOfService",
-      "valueDate": "2021-10-31"
+      "extension": [
+        {
+          "url": "linkingIdentifier",
+          "valueString": "223452-2342-2435-008001"
+        },
+        {
+          "url": "plannedPeriodOfService",
+          "valueDate": "2021-10-31"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/gfeServiceLinkingInfo"
     }
   ],
   "status": "active",
@@ -80,6 +85,15 @@
         }
       ]
     }
+  },
+  "referral": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/referralNumber",
+        "valueString": "REF12022002-121"
+      }
+    ],
+    "display": "Referral Number"
   },
   "diagnosis": [
     {
@@ -125,12 +139,6 @@
   ],
   "item": [
     {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/estimatedDateOfService",
-          "valueDate": "2021-10-31"
-        }
-      ],
       "sequence": 1,
       "revenue": {
         "coding": [
@@ -144,7 +152,7 @@
       "productOrService": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemCptHcpcsCS",
+            "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemProcedureCodes",
             "code": "33502",
             "display": "Some CPT Code 1"
           }
@@ -154,7 +162,7 @@
         {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemCptHcpcsCS",
+              "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemProcedureCodes",
               "code": "34503",
               "display": "Some CPT Code 2"
             }
@@ -167,7 +175,26 @@
       "net": {
         "value": 200,
         "currency": "USD"
-      }
+      },
+      "detail": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/compoundDrugLinkingNum",
+              "valueInteger": 123456
+            }
+          ],
+          "sequence": 1,
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/ndc",
+                "code": "47781-457"
+              }
+            ]
+          }
+        }
+      ]
     }
   ],
   "total": {

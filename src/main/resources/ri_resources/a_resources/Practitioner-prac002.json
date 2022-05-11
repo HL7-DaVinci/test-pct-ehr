@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: National provider identifier: 1234567995</p><p><b>active</b>: true</p><p><b>name</b>: Christine Curie</p><p><b>telecom</b>: ph: 781-232-3232</p><p><b>address</b>: 32 Fruit Street, Boston MA 02114</p><p><b>gender</b>: female</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"prac002\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-davinci-pct-practitioner.html\">PCT Practitioner</a></p></div><p><b>identifier</b>: National provider identifier: 1234567995</p><p><b>active</b>: true</p><p><b>name</b>: Christine Curie</p><p><b>telecom</b>: ph: 781-232-3232</p><p><b>address</b>: 32 Fruit Street, Boston MA 02114</p><p><b>gender</b>: female</p></div>"
   },
   "identifier": [
     {

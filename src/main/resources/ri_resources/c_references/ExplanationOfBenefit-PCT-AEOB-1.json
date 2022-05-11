@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>GFE Reference</b>: <a href=\"Bundle-PCT-GFE-Bundle-Inst-1.html\">Generated Summary: id: 59688475-2324-3242-23473847; type: collection; timestamp: Nov 9, 2021, 6:01:00 AM</a></p><p><b>Disclaimer</b>: Estimate Only ...</p><p><b>Expiration Date</b>: 2021-10-31</p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-patient1001.html\">Generated Summary: Member Number: 12345, Employee number: 667788; Eve Betterhalf; Phone: 781-949-4949; gender: female; birthDate: 1955-07-23; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus U}\">unmarried</span></a></p><p><b>created</b>: 2021-10-12</p><p><b>insurer</b>: <a href=\"Organization-org1001.html\">Generated Summary: Electronic Transmitter Identification Number: ETIN-3200002; active: true; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type pay}\">Payer</span>; name: Umbrella Insurance Company; Phone: 860-547-5001</a></p><p><b>provider</b>: <a href=\"Organization-org1002.html\">Generated Summary: National provider identifier: 1234568095, Tax ID number: TAX-3211001; active: true; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: Boston Radiology Center; Phone: 781-232-3200</a></p><p><b>priority</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span></p><p><b>outcome</b>: complete</p><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>true</td><td><a href=\"Coverage-coverage1001.html\">Generated Summary: status: active; subscriberId: PFP123450000; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\">Self</span>; period: 2021-01-01 --&gt; 2022-01-01</a></td></tr></table><blockquote><p><b>item</b></p><p><b>EstimatedDateOfService</b>: 2021-10-31</p><p><b>sequence</b>: 1</p><p><b>revenue</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemRevenueCS 2011}\">Revenue Code 1</span></p><p><b>productOrService</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemCptHcpcsCS 33502}\">Some CPT Code 1</span></p><p><b>modifier</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemCptHcpcsCS 34503}\">Some CPT Code 2</span></p><blockquote><p><b>adjudication</b></p><p><b>Subject To Medical Management</b>: <span title=\"{http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTSubjectToMedicalMgmtReasonCS concurrent-review}\">Concurrent Review</span></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTAdjudicationCategoryType paidtoprovider}\">Paid to provider</span></p></blockquote></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\">Submitted Amount</span></p></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PCT-AEOB-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-davinci-pct-aeob.html\">PCT Advanced EOB</a></p></div><p><b>GFE Reference</b>: <a href=\"Bundle-PCT-GFE-Bundle-Inst-1.html\">Bundle/PCT-GFE-Bundle-Inst-1</a></p><p><b>Disclaimer</b>: Estimate Only ...</p><p><b>Expiration Date</b>: 2021-10-31</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claim-type.html\">Claim Type Codes</a>#institutional)</span></p><p><b>use</b>: predetermination</p><p><b>patient</b>: <a href=\"Patient-patient1001.html\">Patient/patient1001</a> \" BETTERHALF\"</p><p><b>created</b>: 2021-10-12</p><p><b>insurer</b>: <a href=\"Organization-org1001.html\">Organization/org1001</a> \"Umbrella Insurance Company\"</p><p><b>provider</b>: <a href=\"Organization-org1002.html\">Organization/org1002</a> \"Boston Radiology Center\"</p><p><b>priority</b>: Normal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-processpriority.html\">Process Priority Codes</a>#normal)</span></p><p><b>outcome</b>: complete</p><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>true</td><td><a href=\"Coverage-coverage1001.html\">Coverage/coverage1001</a></td></tr></table><blockquote><p><b>item</b></p><p><b>EstimatedDateOfService</b>: 2021-10-31</p><p><b>sequence</b>: 1</p><p><b>revenue</b>: Revenue Code 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-PCTGFEItemRevenueCS.html\">PCT GFE Item Revenue Code System</a>#2011)</span></p><p><b>productOrService</b>: Some CPT Code 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-PCTGFEItemProcedureCodes.html\">PCT GFE Item Procedure Code System</a>#33502)</span></p><p><b>modifier</b>: Some CPT Code 2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-PCTGFEItemProcedureCodes.html\">PCT GFE Item Procedure Code System</a>#34503)</span></p><blockquote><p><b>adjudication</b></p><p><b>Subject To Medical Management</b>: Concurrent Review (Details: http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTSubjectToMedicalMgmtReasonCS code concurrent-review = 'Concurrent Review', stated as 'Concurrent Review')</p><p><b>category</b>: Paid to provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-PCTAdjudicationCategoryType.html\">PCT Adjudication Category Type</a>#paidtoprovider)</span></p></blockquote></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: Submitted Amount <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-adjudication.html\">Adjudication Value Codes</a>#submitted)</span></p></blockquote></div>"
   },
   "extension": [
     {
@@ -36,7 +36,7 @@
       }
     ]
   },
-  "use": "claim",
+  "use": "predetermination",
   "patient": {
     "reference": "Patient/patient1001"
   },
@@ -45,6 +45,12 @@
     "reference": "Organization/org1001"
   },
   "provider": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/outOfNetworkProviderInfo",
+        "valueUrl": "http://example.com/out-of-network.html"
+      }
+    ],
     "reference": "Organization/org1002"
   },
   "priority": {
@@ -85,7 +91,7 @@
       "productOrService": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemCptHcpcsCS",
+            "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemProcedureCodes",
             "code": "33502",
             "display": "Some CPT Code 1"
           }
@@ -95,7 +101,7 @@
         {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemCptHcpcsCS",
+              "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemProcedureCodes",
               "code": "34503",
               "display": "Some CPT Code 2"
             }

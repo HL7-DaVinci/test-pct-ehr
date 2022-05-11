@@ -48,7 +48,7 @@ import ca.uhn.fhir.jpa.starter.utils.FileLoader;
 public class DataInterceptor {
    private final Logger myLogger = LoggerFactory.getLogger(DataInterceptor.class.getName());
 
-   private String baseUrl = "https://davinci-pct-ehr.logicahealth.org";//"http://localhost:8080";//
+   private String baseUrl = "http://localhost:8080";//"https://davinci-pct-ehr.logicahealth.org";//"http://localhost:8080";//
 
    private IGenericClient client; //
    private boolean dataLoaded;
@@ -128,6 +128,9 @@ public class DataInterceptor {
       "ri_resources/a_resources/Organization-org1001.json",
       "ri_resources/a_resources/Organization-org1002.json"
   };
+  private final String[] endpoints = {
+    "ri_resources/a_resources/Endpoint-endpoint001.json"
+  };
   private final String[] patients = {
       "ri_resources/a_resources/Patient-patient1001.json"
   };
@@ -147,7 +150,8 @@ public class DataInterceptor {
   };
   private final String[] claims = {
       "ri_resources/c_references/Claim-PCT-GFE-Institutional-1.json",
-      "ri_resources/c_references/Claim-PCT-GFE-Professional-1.json"
+      "ri_resources/c_references/Claim-PCT-GFE-Professional-1.json",
+      "ri_resources/c_references/Claim-PCT-GFE-Institutional-MRI.json",
   };
   private final String[] explanationOfBenefits = {
       "ri_resources/c_references/ExplanationOfBenefit-PCT-AEOB-1.json"
@@ -190,9 +194,9 @@ public class DataInterceptor {
       String[] parts = theRequest.getRequestURI().toString().split("/");
       // Here is where the Claim should be evaluated
       if (!dataLoaded) {
-          System.out.println("First request made to Server");
-          System.out.println("Loading all data");
          dataLoaded = true;
+         System.out.println("First request made to Server");
+         System.out.println("Loading all data");
          for (String filename: structureDefinitions) {
             loadDataStructureDefinition(filename);
          }
@@ -210,6 +214,9 @@ public class DataInterceptor {
          }
          for (String filename: patients) {
             loadDataPatient(filename);
+         }
+         for (String filename: endpoints) {
+            loadDataEndpoint(filename);
          }
          for (String filename: practitioners) {
             loadDataPractitioner(filename);
@@ -371,6 +378,16 @@ public class DataInterceptor {
   public void loadDataBundle(String resource) {
       String p = FileLoader.loadResource(resource);
       Bundle r = jparser.parseResource(Bundle.class, p);
+      try {
+          System.out.println("Uploading resource " + resource);
+          MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
+      } catch(Exception e) {
+          System.out.println("Failure to update the Bundle");
+      }
+  }
+  public void loadDataEndpoint(String resource) {
+      String p = FileLoader.loadResource(resource);
+      Endpoint r = jparser.parseResource(Endpoint.class, p);
       try {
           System.out.println("Uploading resource " + resource);
           MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
