@@ -153,12 +153,12 @@ public class DataInterceptor {
       "ri_resources/b_references/Location-Provider-Org-Loc-2.json"
   };
   private final String[] claims = {
-      "ri_resources/c_references/Claim-PCT-GFE-Institutional-1.json",
-      "ri_resources/c_references/Claim-PCT-GFE-Professional-1.json",
-      "ri_resources/c_references/Claim-PCT-GFE-Institutional-MRI.json",
+      "ri_resources/d_references/Claim-PCT-GFE-Institutional-1.json",
+      "ri_resources/d_references/Claim-PCT-GFE-Professional-1.json",
+      "ri_resources/d_references/Claim-PCT-GFE-Institutional-MRI.json",
   };
   private final String[] explanationOfBenefits = {
-      "ri_resources/c_references/ExplanationOfBenefit-PCT-AEOB-1.json"
+      "ri_resources/d_references/ExplanationOfBenefit-PCT-AEOB-1.json"
   };
   private final String[] practitionerRoles = {
       "ri_resources/c_references/PractitionerRole-pracRole002.json"
@@ -234,18 +234,18 @@ public class DataInterceptor {
          for (String filename: locations) {
             loadDataLocation(filename);
          }
-         for (String filename: claims) {
-            loadDataClaim(filename);
-         }
-         for (String filename: explanationOfBenefits) {
-            loadDataExplanationOfBenefit(filename);
-         }
          for (String filename: practitionerRoles) {
             loadDataPractitionerRole(filename);
          }
-         for (String filename: bundles) {
-            loadDataBundle(filename);
+         for (String filename: claims) {
+            loadDataClaim(filename);
          }
+         // for (String filename: explanationOfBenefits) {
+         //    loadDataExplanationOfBenefit(filename);
+         // }
+         // for (String filename: bundles) {
+         //    loadDataBundle(filename);
+         // }
       }
       return true;
   }
