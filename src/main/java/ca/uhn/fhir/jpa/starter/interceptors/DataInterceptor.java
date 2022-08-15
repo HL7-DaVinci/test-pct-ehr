@@ -126,13 +126,16 @@ public class DataInterceptor {
   private final String[] organizations = {
       "ri_resources/a_resources/Organization-Submitter-Org-1.json",
       "ri_resources/a_resources/Organization-org1001.json",
-      "ri_resources/a_resources/Organization-org1002.json"
+      "ri_resources/a_resources/Organization-org1002.json",
+      "ri_resources/a_resources/Organization-org2723.json",
+      "ri_resources/a_resources/Organization-org2724.json"
   };
   private final String[] endpoints = {
     "ri_resources/a_resources/Endpoint-endpoint001.json"
   };
   private final String[] patients = {
-      "ri_resources/a_resources/Patient-patient1001.json"
+      "ri_resources/a_resources/Patient-patient1001.json",
+      "ri_resources/a_resources/Patient-patient2930.json"
   };
   private final String[] practitioners = {
       "ri_resources/a_resources/Practitioner-Submitter-Practitioner-1.json",
@@ -143,18 +146,19 @@ public class DataInterceptor {
       "ri_resources/b_references/Contract-contract1001.json"
   };
   private final String[] coverages = {
-      "ri_resources/b_references/Coverage-coverage1001.json"
+      "ri_resources/b_references/Coverage-coverage1001.json",
+      "ri_resources/b_references/Coverage-Coverage2931.json"
   };
   private final String[] locations = {
       "ri_resources/b_references/Location-Provider-Org-Loc-2.json"
   };
   private final String[] claims = {
-      "ri_resources/c_references/Claim-PCT-GFE-Institutional-1.json",
-      "ri_resources/c_references/Claim-PCT-GFE-Professional-1.json",
-      "ri_resources/c_references/Claim-PCT-GFE-Institutional-MRI.json",
+      "ri_resources/d_references/Claim-PCT-GFE-Institutional-1.json",
+      "ri_resources/d_references/Claim-PCT-GFE-Professional-1.json",
+      "ri_resources/d_references/Claim-PCT-GFE-Institutional-MRI.json",
   };
   private final String[] explanationOfBenefits = {
-      "ri_resources/c_references/ExplanationOfBenefit-PCT-AEOB-1.json"
+      "ri_resources/d_references/ExplanationOfBenefit-PCT-AEOB-1.json"
   };
   private final String[] practitionerRoles = {
       "ri_resources/c_references/PractitionerRole-pracRole002.json"
@@ -230,18 +234,18 @@ public class DataInterceptor {
          for (String filename: locations) {
             loadDataLocation(filename);
          }
-         for (String filename: claims) {
-            loadDataClaim(filename);
-         }
-         for (String filename: explanationOfBenefits) {
-            loadDataExplanationOfBenefit(filename);
-         }
          for (String filename: practitionerRoles) {
             loadDataPractitionerRole(filename);
          }
-         for (String filename: bundles) {
-            loadDataBundle(filename);
+         for (String filename: claims) {
+            loadDataClaim(filename);
          }
+         // for (String filename: explanationOfBenefits) {
+         //    loadDataExplanationOfBenefit(filename);
+         // }
+         // for (String filename: bundles) {
+         //    loadDataBundle(filename);
+         // }
       }
       return true;
   }
