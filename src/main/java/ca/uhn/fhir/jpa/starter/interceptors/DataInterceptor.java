@@ -147,7 +147,7 @@ public class DataInterceptor {
   };
   private final String[] coverages = {
       "ri_resources/b_references/Coverage-coverage1001.json",
-      "ri_resources/b_references/Coverage-Coverage2931.json"
+      "ri_resources/b_references/Coverage-coverage2931.json"
   };
   private final String[] locations = {
       "ri_resources/b_references/Location-Provider-Org-Loc-2.json"
