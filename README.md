@@ -1,28 +1,4 @@
-# PCT EHR Server
-
-This server is based on the HAPI FHIR JPA Starter server with modifications to support Patient Cost
-Transparency.
-
-## Prerequisites
-
-In order to use this sample, you should have:
-
-- [This project](https://github.com/HL7-DaVinci/test-pct-ehr) checked out. You may wish to create a GitHub Fork of the project and check that out instead so that you can customize the project and save the results to GitHub.
-
-### and either
- - Oracle Java (JDK) installed: Minimum JDK8 or newer.
- - Apache Maven build tool (newest version)
-
-### or
- - Docker, as the entire project can be built using multistage docker (with both JDK and maven wrapped in docker) or used directly from [Docker Hub](https://hub.docker.com/repository/docker/hapiproject/hapi)
-
-## Running via [Docker Hub](https://hub.docker.com/repository/docker/hapiproject/hapi)
-
-Each tagged/released version of `hapi-fhir-jpaserver` is built as a Docker image and published to Docker hub. To run the published Docker image from DockerHub:
-
-```
-docker pull hapiproject/hapi:latest
-docker run -p 8080:8080 hapiproject/hapi:latest
+FEapiproject/hapi:latest
 ```
 
 This will run the docker image with the default configuration, mapping port 8080 from the container to port 8080 in the host. Once running, you can access `http://localhost:8080/` in the browser to access the HAPI FHIR server's UI or use `http://localhost:8080/fhir/` as the base URL for your REST requests.
@@ -78,6 +54,16 @@ volumes:
     hapi-data:
         external: true
 ```
+
+## Running the local repo in Docker
+```
+ .\build-docker-image.bat
+ ```
+
+ ```
+ docker compose up 
+ ```
+
 
 ## Running locally
 
