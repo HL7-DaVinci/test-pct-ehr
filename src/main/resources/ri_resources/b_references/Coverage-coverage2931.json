@@ -13,22 +13,19 @@
     "identifier": [
         {
             "use": "usual",
-            "system": "https://www.edifecs.com/fhir/CodeSystems/id-coverage",
-            "value": "b074345b9dc9e72da26a4c65971f9f9fc721d69b3477edb4caa80037e009b915"
-        },
-        {
-            "use": "usual",
-            "system": "https://fhir.collablynk.com/edifecs/fhir/R4/",
+            "system": "https://pct-ehr.davinci.hl7.org/fhir",
             "value": "2931"
         }
     ],
     "status": "active",
     "subscriber": {
-        "reference": "Patient/patient2930"
+        "reference": "Patient/patient2930",
+        "display": "Sydney Bingman"
     },
     "subscriberId": "H13936781",
     "beneficiary": {
-        "reference": "Patient/patient2930"
+        "reference": "Patient/patient2930",
+        "display": "Sydney Bingman"
     },
     "relationship": {
         "coding": [

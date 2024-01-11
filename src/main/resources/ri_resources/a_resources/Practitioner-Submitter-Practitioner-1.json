@@ -59,5 +59,16 @@
       "value": "csender@GFEServiceHelp.com",
       "use": "work"
     }
+  ],
+  "qualification": [
+    {
+        "coding": [
+            {
+              "system": "http://nucc.org/provider-taxonomy",
+              "code": "207T00000X",
+              "display": "Neurological Surgery"
+            }
+        ]
+    }
   ]
 }

@@ -35,6 +35,15 @@
           "display": "Institutional GFE Submitter"
         }
       ]
+    },
+    {
+        "coding": [
+            {
+                "system": "http://nucc.org/provider-taxonomy",
+                "code": "282N00000X",
+                "display": "General Acute Care Hospital"
+            }
+        ]
     }
   ],
   "name": "GFE Service Help INC.",

@@ -49,5 +49,16 @@
       "text": "32 Fruit Street, Boston MA 02114"
     }
   ],
-  "gender": "female"
+  "gender": "female",
+  "qualification": [
+    {
+        "coding": [
+            {
+              "system": "http://nucc.org/provider-taxonomy",
+              "code": "207Q00000X",
+              "display": "Family Medicine"
+            }
+        ]
+    }
+  ]
 }

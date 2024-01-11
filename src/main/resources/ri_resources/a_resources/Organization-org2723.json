@@ -9,13 +9,16 @@
     },
     "identifier": [
         {
-            "system": "https://www.edifecs.com/fhir/CodeSystems/payer-id",
-            "value": "FLBL123456789"
-        },
-        {
-            "use": "usual",
-            "system": "https://fhir.collablynk.com/edifecs/fhir/R4/",
-            "value": "2723"
+            "type": {
+            "coding": [
+                {
+                "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTOrgIdentifierTypeCS",
+                "code": "ETIN",
+                "display": "Electronic Transmitter Identification Number"
+                }
+            ]
+            },
+            "value": "ETIN-3208472"
         }
     ],
     "active": true,

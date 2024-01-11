@@ -40,6 +40,15 @@
                     "display": "Healthcare Provider"
                 }
             ]
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://nucc.org/provider-taxonomy",
+                    "code": "282N00000X",
+                    "display": "General Acute Care Hospital"
+                }
+            ]
         }
     ],
     "name": "Memorial Hospital West",

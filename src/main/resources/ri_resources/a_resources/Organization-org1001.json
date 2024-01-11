@@ -12,17 +12,16 @@
   },
   "identifier": [
     {
-      "type": {
+        "type": {
         "coding": [
-          {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "NPI",
-            "display": "National provider identifier"
-          }
+            {
+            "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTOrgIdentifierTypeCS",
+            "code": "ETIN",
+            "display": "Electronic Transmitter Identification Number"
+            }
         ]
-      },
-      "system": "http://hl7.org/fhir/sid/us-npi",
-      "value": "1234568096"
+        },
+        "value": "ETIN-9836472"
     }
   ],
   "active": true,

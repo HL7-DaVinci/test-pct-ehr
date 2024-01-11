@@ -57,5 +57,16 @@
       "text": "32 Fruit Street, Boston MA 02114"
     }
   ],
-  "gender": "female"
+  "gender": "female",
+  "qualification": [
+    {
+        "coding": [
+            {
+              "system": "http://nucc.org/provider-taxonomy",
+              "code": "207R00000X",
+              "display": "Internal Medicine"
+            }
+        ]
+    }
+  ]
 }
