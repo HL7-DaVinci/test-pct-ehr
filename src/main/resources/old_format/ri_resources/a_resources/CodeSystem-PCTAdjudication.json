@@ -1,0 +1,76 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PCTAdjudication",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTAdjudication</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">coinsurance<a name=\"PCTAdjudication-coinsurance\"> </a></td><td>Co-insurance</td><td>The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%.</td></tr><tr><td style=\"white-space:nowrap\">noncovered<a name=\"PCTAdjudication-noncovered\"> </a></td><td>Noncovered</td><td>The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</td></tr><tr><td style=\"white-space:nowrap\">memberliability<a name=\"PCTAdjudication-memberliability\"> </a></td><td>Member liability</td><td>The amount of the member's liability.</td></tr><tr><td style=\"white-space:nowrap\">discount<a name=\"PCTAdjudication-discount\"> </a></td><td>Discount</td><td>The amount of the discount</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fm"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-pct/ImplementationGuide/hl7.fhir.us.davinci-pct"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTAdjudication",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.16.2"
+  }],
+  "version" : "2.0.0-ballot",
+  "name" : "PCTAdjudication",
+  "title" : "PCT Adjudication Code System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-04-12T09:35:40-07:00",
+  "publisher" : "HL7 International / Financial Management",
+  "contact" : [{
+    "name" : "HL7 International / Financial Management",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fm"
+    },
+    {
+      "system" : "email",
+      "value" : "fmlists@lists.hl7.org"
+    }]
+  }],
+  "description" : "Describes the various amount fields used when payers receive and adjudicate a claim.  It complements the values defined in http://terminology.hl7.org/CodeSystem/adjudication. This CodeSystem is currently defined by this IG, but is anticipated to be temporary. The concepts within are expected to be moved in a future version to a more central terminology specification such as THO, which will result in a code system url change and possibly modified codes and definitions.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "copyright" : "This CodeSystem is not copyrighted.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "coinsurance",
+    "display" : "Co-insurance",
+    "definition" : "The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%."
+  },
+  {
+    "code" : "noncovered",
+    "display" : "Noncovered",
+    "definition" : "The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract."
+  },
+  {
+    "code" : "memberliability",
+    "display" : "Member liability",
+    "definition" : "The amount of the member's liability."
+  },
+  {
+    "code" : "discount",
+    "display" : "Discount",
+    "definition" : "The amount of the discount"
+  }]
+}

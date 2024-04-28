@@ -1,0 +1,58 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "PCTGFEItemNDCVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ndc.html\"><code>http://hl7.org/fhir/sid/ndc</code></a></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fm"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-pct/ImplementationGuide/hl7.fhir.us.davinci-pct"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/us/davinci-pct/ValueSet/PCTGFEItemNDCVS",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.48.21"
+  }],
+  "version" : "2.0.0-ballot",
+  "name" : "PCTGFEItemNDCVS",
+  "title" : "PCT GFE Item NDC Value Set",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-04-12T09:35:40-07:00",
+  "publisher" : "HL7 International / Financial Management",
+  "contact" : [{
+    "name" : "HL7 International / Financial Management",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fm"
+    },
+    {
+      "system" : "email",
+      "value" : "fmlists@lists.hl7.org"
+    }]
+  }],
+  "description" : "The FDA published list of NDC codes for finished drug products",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "copyright" : "This Valueset is not copyrighted.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/ndc"
+    }]
+  }
+}

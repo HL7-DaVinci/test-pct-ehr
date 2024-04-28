@@ -1,0 +1,70 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "GFE-submit",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/Claim/$gfe-submit</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>resource</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></td><td/><td><div><p>A Bundle containing a single or multiple GFE resources plus referenced resources.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/operationoutcome.html\">OperationOutcome</a></td><td/><td><div><p>When successful, this will return a Bundle of type batch-submit; When there is an error calling $gfe-submit (4xx, 5xx HTTP code) then an OperationOutcome must be returned per the <a href=\"https://hl7.org/fhir/R5/async-bundle.html\">async pattern</a>.</p>\n</div></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fm"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-pct/ImplementationGuide/hl7.fhir.us.davinci-pct"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/us/davinci-pct/OperationDefinition/GFE-submit",
+  "version" : "2.0.0-ballot",
+  "name" : "GFESubmit",
+  "title" : "Submit a GFE resource for the creation of an AEOB",
+  "status" : "active",
+  "kind" : "operation",
+  "date" : "2024-04-12T09:35:40-07:00",
+  "publisher" : "HL7 International / Financial Management",
+  "contact" : [{
+    "name" : "HL7 International / Financial Management",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fm"
+    },
+    {
+      "system" : "email",
+      "value" : "fmlists@lists.hl7.org"
+    }]
+  }],
+  "description" : "This operation is used by an entity to submit one or multiple GFEs as a Bundle containing the GFE(s) and other referenced resources for processing. The only input parameter is the single Bundle resource with one or multiple GFE(s) - each of which is based on the Claim resource (along with other referenced resources). The output is a url in the Content-Location header for subsequent polling and optionally an OperationOutcome resource per [async pattern](https://hl7.org/fhir/R5/async-bundle.html). If after polling the response is complete, then the result will either be a single Bundle with the AEOB - which is based on the ExplanationOfBenefit resource, (and other referenced resources) or an OperationOutcome resource indicating the AEOB will be sent directly to the patient.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "code" : "gfe-submit",
+  "base" : "http://hl7.org/fhir/us/davinci-pct/OperationDefinition/GFE-submit",
+  "resource" : ["Claim"],
+  "system" : false,
+  "type" : true,
+  "instance" : false,
+  "parameter" : [{
+    "name" : "resource",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "A Bundle containing a single or multiple GFE resources plus referenced resources.",
+    "type" : "Bundle"
+  },
+  {
+    "name" : "return",
+    "use" : "out",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "When successful, this will return a Bundle of type batch-submit; When there is an error calling $gfe-submit (4xx, 5xx HTTP code) then an OperationOutcome must be returned per the [async pattern](https://hl7.org/fhir/R5/async-bundle.html).",
+    "type" : "OperationOutcome"
+  }]
+}

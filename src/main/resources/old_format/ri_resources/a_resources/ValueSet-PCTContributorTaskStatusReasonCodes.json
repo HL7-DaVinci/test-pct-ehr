@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "PCTContributorTaskStatusReasonCodes",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html\"><code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTTaskStatusReasonCSTemporaryTrialUse</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html#PCTTaskStatusReasonCSTemporaryTrialUse-fulfilled\">fulfilled</a></td><td style=\"color: #cccccc\">Fulfilled</td><td>The GFE Request was fulfilled.</td></tr><tr><td><a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html#PCTTaskStatusReasonCSTemporaryTrialUse-schedule\">schedule</a></td><td style=\"color: #cccccc\">Schedule</td><td>Provider cannot participate due to proposed schedule dates and or times.</td></tr><tr><td><a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html#PCTTaskStatusReasonCSTemporaryTrialUse-service-not-provided\">service-not-provided</a></td><td style=\"color: #cccccc\">Service Not Provided</td><td>Services or Products being requested are not available from this GFE contributor.</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fm"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-pct/ImplementationGuide/hl7.fhir.us.davinci-pct"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/us/davinci-pct/ValueSet/PCTContributorTaskStatusReasonCodes",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.48.12"
+  }],
+  "version" : "2.0.0-ballot",
+  "name" : "PCTContributorTaskStatusReasonCodes",
+  "title" : "PCT GFE Contributor Task Status Reason Codes ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-04-12T09:35:40-07:00",
+  "publisher" : "HL7 International / Financial Management",
+  "contact" : [{
+    "name" : "HL7 International / Financial Management",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fm"
+    },
+    {
+      "system" : "email",
+      "value" : "fmlists@lists.hl7.org"
+    }]
+  }],
+  "description" : "Defining codes for defining GFE request GFE contributor task status reason types.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTTaskStatusReasonCSTemporaryTrialUse",
+      "concept" : [{
+        "code" : "fulfilled"
+      },
+      {
+        "code" : "schedule"
+      },
+      {
+        "code" : "service-not-provided"
+      }]
+    }]
+  }
+}

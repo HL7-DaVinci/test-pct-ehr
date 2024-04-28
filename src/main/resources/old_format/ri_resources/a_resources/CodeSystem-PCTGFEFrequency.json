@@ -1,0 +1,68 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PCTGFEFrequency",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEFrequency</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"PCTGFEFrequency-1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"PCTGFEFrequency-7\"> </a></td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"PCTGFEFrequency-8\"> </a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fm"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-pct/ImplementationGuide/hl7.fhir.us.davinci-pct"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEFrequency",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.16.9"
+  }],
+  "version" : "2.0.0-ballot",
+  "name" : "PCTGFEFrequency",
+  "title" : "PCT GFE Frequency Code System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-04-12T09:35:40-07:00",
+  "publisher" : "HL7 International / Financial Management",
+  "contact" : [{
+    "name" : "HL7 International / Financial Management",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fm"
+    },
+    {
+      "system" : "email",
+      "value" : "fmlists@lists.hl7.org"
+    }]
+  }],
+  "description" : "These codes are derived from the NUBC Uniform Billing (UB-04) Type of Bill (TOB) codes.  The fourth digit of the TOB code defines the frequency of the bill for the institutional and electronic professional claim. This CodeSystem is currently defined by this IG, but is anticipated to be temporary. The concepts within are expected to be moved in a future version to a more central terminology specification such as THO, which will result in a code system url change and possibly modified codes and definitions.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "copyright" : "This CodeSystem is not copyrighted.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "1",
+    "display" : "1"
+  },
+  {
+    "code" : "7",
+    "display" : "7"
+  },
+  {
+    "code" : "8",
+    "display" : "8"
+  }]
+}

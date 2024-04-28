@@ -1,0 +1,85 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PCTAdjudicationCategoryCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTAdjudicationCategoryCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">billingnetworkstatus<a name=\"PCTAdjudicationCategoryCS-billingnetworkstatus\"> </a></td><td>Billing Network Status</td><td>Indicates the Billing Provider network status in relation to the patient's coverage.</td></tr><tr><td style=\"white-space:nowrap\">renderingnetworkstatus<a name=\"PCTAdjudicationCategoryCS-renderingnetworkstatus\"> </a></td><td>Rendering Network Status</td><td>Indicates the Rendering Provider network status in relation to the patient's coverage.</td></tr><tr><td style=\"white-space:nowrap\">benefitpaymentstatus<a name=\"PCTAdjudicationCategoryCS-benefitpaymentstatus\"> </a></td><td>Benefit Payment Status</td><td>Indicates the in network or out of network payment status of the claim.</td></tr><tr><td style=\"white-space:nowrap\">adjustmentreason<a name=\"PCTAdjudicationCategoryCS-adjustmentreason\"> </a></td><td>Adjustment Reason</td><td>Defines the adjudication slice to identify the adjustment reason</td></tr><tr><td style=\"white-space:nowrap\">medicalmanagement<a name=\"PCTAdjudicationCategoryCS-medicalmanagement\"> </a></td><td>Medical Management</td><td>Defines the adjudication slice to identify medical management</td></tr><tr><td style=\"white-space:nowrap\">memberliability<a name=\"PCTAdjudicationCategoryCS-memberliability\"> </a></td><td>Member Liability</td><td>Defines the adjudication slice to identify member liability</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fm"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-pct/ImplementationGuide/hl7.fhir.us.davinci-pct"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTAdjudicationCategoryCS",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.16.3"
+  }],
+  "version" : "2.0.0-ballot",
+  "name" : "PCTAdjudicationCategoryCS",
+  "title" : "PCT Adjudication Category CodeSystem",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-04-12T09:35:40-07:00",
+  "publisher" : "HL7 International / Financial Management",
+  "contact" : [{
+    "name" : "HL7 International / Financial Management",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fm"
+    },
+    {
+      "system" : "email",
+      "value" : "fmlists@lists.hl7.org"
+    }]
+  }],
+  "description" : "Codes indicating the type of adjudication information provided. This CodeSystem is currently defined by this IG, but is anticipated to be temporary. The concepts within are expected to be moved in a future version to a more central terminology specification such as THO, which will result in a code system url change and possibly modified codes and definitions.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "billingnetworkstatus",
+    "display" : "Billing Network Status",
+    "definition" : "Indicates the Billing Provider network status in relation to the patient's coverage."
+  },
+  {
+    "code" : "renderingnetworkstatus",
+    "display" : "Rendering Network Status",
+    "definition" : "Indicates the Rendering Provider network status in relation to the patient's coverage."
+  },
+  {
+    "code" : "benefitpaymentstatus",
+    "display" : "Benefit Payment Status",
+    "definition" : "Indicates the in network or out of network payment status of the claim."
+  },
+  {
+    "code" : "adjustmentreason",
+    "display" : "Adjustment Reason",
+    "definition" : "Defines the adjudication slice to identify the adjustment reason"
+  },
+  {
+    "code" : "medicalmanagement",
+    "display" : "Medical Management",
+    "definition" : "Defines the adjudication slice to identify medical management"
+  },
+  {
+    "code" : "memberliability",
+    "display" : "Member Liability",
+    "definition" : "Defines the adjudication slice to identify member liability"
+  }]
+}
