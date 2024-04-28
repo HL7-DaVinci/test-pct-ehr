@@ -180,10 +180,9 @@ public class ProcessCustomizer {
             // "/fhir");
             // String test = theRequest.getScheme() + "://" + theRequest.getServerName() +
             // ":" + theRequest.getServerPort() + theRequest.getContextPath();
-            client = fhirContext.newRestfulGenericClient(theRequest.getScheme() + "://" + theRequest.getServerName()
-                    + ":" + theRequest.getServerPort() + "/fhir");
+            client = fhirContext.newRestfulGenericClient(theRequest.getScheme() + "://" + theRequest.getServerName() + ":" + theRequest.getServerPort() + "/fhir");
             dataLoaded = true;
-            System.out.println("First request made to Server");
+            System.out.println("First request made to Server: " + theRequest.getScheme() + "://" + theRequest.getServerName() + ":" + theRequest.getServerPort() + "/fhir");
             System.out.println("Loading all data");
 
             try{
@@ -251,7 +250,8 @@ public class ProcessCustomizer {
             System.out.println("Uploading resource " + resource);
             MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
         } catch (Exception e) {
-            System.out.println("Failure to update the StructureDefinition");
+            
+            System.out.println("Failure to update the StructureDefinition: " + e.getMessage());
         }
     }
 
