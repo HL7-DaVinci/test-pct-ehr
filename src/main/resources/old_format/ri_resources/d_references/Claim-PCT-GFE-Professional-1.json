@@ -1,0 +1,200 @@
+{
+  "resourceType": "Claim",
+  "id": "PCT-GFE-Professional-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/davinci-pct-gfe-professional"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PCT-GFE-Professional-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-davinci-pct-gfe-professional.html\">PCT Good Faith Estimate Professional</a></p></div><p><b>GFESubmitter</b>: <a href=\"Practitioner-Submitter-Practitioner-1.html\">Practitioner/Submitter-Practitioner-1</a> \" OLOGIST\"</p><p><b>GFEProviderAssignedIdentifier</b>: id: GFEProviderAssignedID0002</p><p><b>ProviderEventMethodology</b>: EEMM1022</p><p><b>InterTransIdentifier</b>: id: InterTransID0002</p><blockquote><p><b>GFEServiceLinkingInfo</b></p><p><b>value</b>: 223452-2342-2435-008001</p><p><b>value</b>: 2021-10-31</p></blockquote><p><b>status</b>: active</p><p><b>type</b>: Professional <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claim-type.html\">Claim Type Codes</a>#professional)</span></p><p><b>use</b>: predetermination</p><p><b>patient</b>: <a href=\"Patient-patient1001.html\">Patient/patient1001</a> \" BETTERHALF\"</p><p><b>created</b>: 2021-10-05</p><p><b>insurer</b>: <a href=\"Organization-org1001.html\">Organization/org1001</a> \"Umbrella Insurance Company\"</p><p><b>provider</b>: <a href=\"PractitionerRole-pracRole002.html\">PractitionerRole/pracRole002</a></p><p><b>priority</b>: Normal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-processpriority.html\">Process Priority Codes</a>#normal)</span></p><h3>Payees</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-payeetype.html\">ClaimPayeeTypeCodes</a>#provider)</span></td></tr></table><p><b>referral</b>: <span>: Referral Number</span></p><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td><td><b>Type</b></td><td><b>PackageCode</b></td></tr><tr><td>*</td><td>1</td><td>Unspecified focal traumatic brain injury <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#S06.30)</span></td><td>Principal Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-ex-diagnosistype.html\">Example Diagnosis Type Codes</a>#principal)</span></td><td>Head trauma - concussion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-ex-diagnosisrelatedgroup.html\">Example Diagnosis Related Group Codes</a>#400)</span></td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td><a href=\"Coverage-coverage1001.html\">Coverage/coverage1001</a></td></tr></table><blockquote><p><b>item</b></p><p><b>EstimatedDateOfService</b>: 2021-10-31</p><p><b>GFEBillingProviderLineItemCtrlNum</b>: id: GFEBillingProviderLineItemCtrlNum-0001</p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: Some CPT Code 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-PCTGFEItemProcedureCodes.html\">PCT GFE Item Procedure Code System</a>#33502)</span></p><p><b>modifier</b>: Some CPT Code 2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-PCTGFEItemProcedureCodes.html\">PCT GFE Item Procedure Code System</a>#34503)</span></p><p><b>location</b>: Inpatient Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (2.16.840.1.113883.15.5#21)</span></p><p><b>quantity</b>: 1</p></blockquote></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/gfeSubmitter",
+      "valueReference": {
+        "reference": "Practitioner/Submitter-Practitioner-1"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/gfeProviderAssignedIdentifier",
+      "valueIdentifier": {
+        "value": "GFEProviderAssignedID0002"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/providerEventMethodology",
+      "valueString": "EEMM1022"
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/interTransIdentifier",
+      "valueIdentifier": {
+        "value": "InterTransID0002"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "linkingIdentifier",
+          "valueString": "223452-2342-2435-008001"
+        },
+        {
+          "url": "plannedPeriodOfService",
+          "valueDate": "2021-10-31"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/gfeServiceLinkingInfo"
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "professional",
+        "display": "Professional"
+      }
+    ]
+  },
+  "use": "predetermination",
+  "patient": {
+    "reference": "Patient/patient1001"
+  },
+  "created": "2021-10-05",
+  "insurer": {
+    "reference": "Organization/org1001"
+  },
+  "provider": {
+    "reference": "PractitionerRole/pracRole002"
+  },
+  "priority": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+        "code": "normal"
+      }
+    ]
+  },
+  "payee": {
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/payeetype",
+          "code": "provider"
+        }
+      ]
+    }
+  },
+  "referral": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/referralNumber",
+        "valueString": "REF12022002-122"
+      }
+    ],
+    "display": "Referral Number"
+  },
+  "diagnosis": [
+    {
+      "sequence": 1,
+      "diagnosisCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+            "code": "S06.30",
+            "display": "Unspecified focal traumatic brain injury"
+          }
+        ]
+      },
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+              "code": "principal"
+            }
+          ]
+        }
+      ],
+      "packageCode": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosisrelatedgroup",
+            "code": "400",
+            "display": "Head trauma - concussion"
+          }
+        ]
+      }
+    }
+  ],
+  "insurance": [
+    {
+      "sequence": 1,
+      "focal": true,
+      "coverage": {
+        "reference": "Coverage/coverage1001"
+      }
+    }
+  ],
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/estimatedDateOfService",
+          "valueDate": "2021-10-31"
+        },
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/gfeBillingProviderLineItemCtrlNum",
+          "valueIdentifier": {
+            "value": "GFEBillingProviderLineItemCtrlNum-0001"
+          }
+        }
+      ],
+      "sequence": 1,
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemProcedureCodes",
+            "code": "33502",
+            "display": "Some CPT Code 1"
+          }
+        ]
+      },
+      "modifier": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEItemProcedureCodes",
+              "code": "34503",
+              "display": "Some CPT Code 2"
+            }
+          ]
+        }
+      ],
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://oidref.com/2.16.840.1.113883.15.5",
+            "code": "21",
+            "display": "Inpatient Hospital"
+          }
+        ]
+      },
+      "quantity": {
+        "value": 1
+      },
+      "unitPrice": {
+        "value": 200
+      },
+      "net": {
+        "value": 200,
+        "currency": "USD"
+      }
+    }
+  ],
+  "total": {
+    "value": 200,
+    "currency": "USD"
+  }
+}

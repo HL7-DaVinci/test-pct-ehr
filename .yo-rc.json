@@ -1,0 +1,143 @@
+{
+  "generator-reference-implementation": {
+    "directory": "test-pct-ehr",
+    "name": "PCT EHR Server RI",
+    "package": "https://hl7.org/fhir/us/core/STU3.1.1/package.tgz",
+    "hapi": {
+      "packageBase": "com.lantanagroup",
+      "applicationClassName": "PctEhrServerRiApplication"
+    },
+    "version": "0.0.1-SNAPSHOT",
+    "title": "Reference Implementation",
+    "operations": [
+      {
+        "id": "docref",
+        "url": "http://hl7.org/fhir/us/core/OperationDefinition/docref",
+        "name": "USCoreFetchDocumentReferences",
+        "code": "docref",
+        "system": false,
+        "type": true,
+        "instance": false,
+        "className": "DocrefOperation",
+        "packagePath": "com.lantanagroup.providers.DocrefOperation",
+        "methodName": "docref",
+        "modelPackageVersion": "r4",
+        "inputParameters": [
+          {
+            "name": "patient",
+            "use": "in",
+            "min": 1,
+            "max": "1",
+            "documentation": "The id of the patient resource located on the server on which this operation is executed.  If there is no match, an empty Bundle is returned",
+            "type": "id",
+            "dataType": "IdType",
+            "methodParameterName": "thePatient"
+          },
+          {
+            "name": "start",
+            "use": "in",
+            "min": 0,
+            "max": "1",
+            "documentation": "The date range relates to care dates, not record currency dates - e.g. all records relating to care provided in a certain date range. If no start date is provided, all documents prior to the end date are in scope.  If neither a start date nor an end date is provided, the most recent or current document is in scope.",
+            "type": "date",
+            "dataType": "DateType",
+            "methodParameterName": "theStart"
+          },
+          {
+            "name": "end",
+            "use": "in",
+            "min": 0,
+            "max": "1",
+            "documentation": "The date range relates to care dates, not record currency dates - e.g. all records relating to care provided in a certain date range. If no end date is provided, all documents subsequent to the start date are in scope. If neither a start date nor an end date is provided, the most recent or current document is in scope",
+            "type": "date",
+            "dataType": "DateType",
+            "methodParameterName": "theEnd"
+          },
+          {
+            "name": "type",
+            "use": "in",
+            "min": 0,
+            "max": "1",
+            "documentation": "The type relates to document type e.g. for the LOINC code for a C-CDA Clinical Summary of Care (CCD) is 34133-9 (Summary of episode note). If no type is provided, the CCD document, if available, SHALL be in scope and all other document types MAY be in scope",
+            "type": "CodeableConcept",
+            "binding": {
+              "strength": "required",
+              "valueSet": "http://hl7.org/fhir/ValueSet/c80-doc-typecodes"
+            },
+            "dataType": "CodeableConcept",
+            "methodParameterName": "theType"
+          },
+          {
+            "name": "on-demand",
+            "use": "in",
+            "min": 0,
+            "max": "1",
+            "documentation": "This on-demand parameter allows client to dictate whether they are requesting only ‘on-demand’ or both ‘on-demand’ and 'stable' documents (or delayed/deferred assembly) that meet the query parameters",
+            "type": "boolean",
+            "dataType": "BooleanType",
+            "methodParameterName": "theOndemand"
+          }
+        ],
+        "outputType": {
+          "name": "return",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "The bundle type is \"searchset\"containing [US Core DocumentReference Profiles](http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference)",
+          "type": "Bundle",
+          "dataType": "Bundle"
+        }
+      }
+    ],
+    "servers": [
+      {
+        "commonPackagePath": "com.lantanagroup.common",
+        "providerPackagePath": "com.lantanagroup.providers",
+        "serverPackagePath": "com.lantanagroup.servers.uscoreclient",
+        "destinationPath": "./src/main/java/com/lantanagroup/servers/uscoreclient",
+        "id": "uscoreclient",
+        "configClassName": "UsCoreClientConfig",
+        "propertiesClassName": "UsCoreClientProperties",
+        "port": 8080,
+        "fhirVersion": "R4",
+        "features": [],
+        "customCapabilityStatement": true,
+        "operations": [
+          "docref"
+        ],
+        "implementationGuides": [
+          {
+            "id": "hl_7_fhir_us_core",
+            "name": "hl7.fhir.us.core",
+            "version": "3.1.1",
+            "packageUrl": "https://hl7.org/fhir/us/core/STU3.1.1/package.tgz"
+          }
+        ]
+      },
+      {
+        "commonPackagePath": "com.lantanagroup.common",
+        "providerPackagePath": "com.lantanagroup.providers",
+        "serverPackagePath": "com.lantanagroup.servers.uscoreserver",
+        "destinationPath": "./src/main/java/com/lantanagroup/servers/uscoreserver",
+        "id": "uscoreserver",
+        "configClassName": "UsCoreServerConfig",
+        "propertiesClassName": "UsCoreServerProperties",
+        "port": 8081,
+        "fhirVersion": "R4",
+        "features": [],
+        "customCapabilityStatement": true,
+        "operations": [
+          "docref"
+        ],
+        "implementationGuides": [
+          {
+            "id": "hl_7_fhir_us_core",
+            "name": "hl7.fhir.us.core",
+            "version": "3.1.1",
+            "packageUrl": "https://hl7.org/fhir/us/core/STU3.1.1/package.tgz"
+          }
+        ]
+      }
+    ]
+  }
+}

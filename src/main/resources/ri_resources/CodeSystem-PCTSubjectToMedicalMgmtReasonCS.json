@@ -1,0 +1,76 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PCTSubjectToMedicalMgmtReasonCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTSubjectToMedicalMgmtReasonCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">concurrent-review<a name=\"PCTSubjectToMedicalMgmtReasonCS-concurrent-review\"> </a></td><td>Concurrent Review</td><td>Concurrent Review</td></tr><tr><td style=\"white-space:nowrap\">prior-auth<a name=\"PCTSubjectToMedicalMgmtReasonCS-prior-auth\"> </a></td><td>Prior Authorization</td><td>Prior Authorization</td></tr><tr><td style=\"white-space:nowrap\">step-therapy<a name=\"PCTSubjectToMedicalMgmtReasonCS-step-therapy\"> </a></td><td>Step Therapy</td><td>Step Therapy</td></tr><tr><td style=\"white-space:nowrap\">fail-first<a name=\"PCTSubjectToMedicalMgmtReasonCS-fail-first\"> </a></td><td>Fail-First</td><td>Fail-First</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fm"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-pct/ImplementationGuide/hl7.fhir.us.davinci-pct"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTSubjectToMedicalMgmtReasonCS",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.16.16"
+  }],
+  "version" : "2.0.0-ballot",
+  "name" : "PCTSubjectToMedicalMgmtReasonCS",
+  "title" : "PCT Subject-To-Medical-Management Reason Code System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-04-12T09:35:40-07:00",
+  "publisher" : "HL7 International / Financial Management",
+  "contact" : [{
+    "name" : "HL7 International / Financial Management",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fm"
+    },
+    {
+      "system" : "email",
+      "value" : "fmlists@lists.hl7.org"
+    }]
+  }],
+  "description" : "Defining codes for the classification of subject-to-medical-management reason types. This CodeSystem is currently defined by this IG, but is anticipated to be temporary. The concepts within are expected to be moved in a future version to a more central terminology specification such as THO, which will result in a code system url change and possibly modified codes and definitions.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "copyright" : "This CodeSystem is not copyrighted.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "concurrent-review",
+    "display" : "Concurrent Review",
+    "definition" : "Concurrent Review"
+  },
+  {
+    "code" : "prior-auth",
+    "display" : "Prior Authorization",
+    "definition" : "Prior Authorization"
+  },
+  {
+    "code" : "step-therapy",
+    "display" : "Step Therapy",
+    "definition" : "Step Therapy"
+  },
+  {
+    "code" : "fail-first",
+    "display" : "Fail-First",
+    "definition" : "Fail-First"
+  }]
+}

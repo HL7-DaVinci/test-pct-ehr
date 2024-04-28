@@ -1,0 +1,106 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PCTFinancialType",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTFinancialType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">allowed<a name=\"PCTFinancialType-allowed\"> </a></td><td>Allowed</td><td>The maximum amount a plan will pay for a covered health care service. May also be called &quot;payment allowance&quot;, or &quot;negotiated rate&quot;.</td></tr><tr><td style=\"white-space:nowrap\">coinsurance<a name=\"PCTFinancialType-coinsurance\"> </a></td><td>Co-Insurance</td><td>The amount the insured individual pays, as a set percentage of the cost of covered services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%.</td></tr><tr><td style=\"white-space:nowrap\">copay<a name=\"PCTFinancialType-copay\"> </a></td><td>CoPay</td><td>A fixed amount ($20, for example) the insured individual pays for a covered health care service after the deductible is paid.</td></tr><tr><td style=\"white-space:nowrap\">deductible<a name=\"PCTFinancialType-deductible\"> </a></td><td>Deductible</td><td>The amount the insured individual pays for covered health care services before the insurance plan starts to pay.</td></tr><tr><td style=\"white-space:nowrap\">eligible<a name=\"PCTFinancialType-eligible\"> </a></td><td>Eligible Amount</td><td>Amount of the charge which is considered for adjudication.</td></tr><tr><td style=\"white-space:nowrap\">memberliability<a name=\"PCTFinancialType-memberliability\"> </a></td><td>Member Liability</td><td>The amount of the member's liability.</td></tr><tr><td style=\"white-space:nowrap\">noncovered<a name=\"PCTFinancialType-noncovered\"> </a></td><td>Noncovered</td><td>The portion of the cost of the service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</td></tr><tr><td style=\"white-space:nowrap\">out-of-pocket-maximum<a name=\"PCTFinancialType-out-of-pocket-maximum\"> </a></td><td>Out-of-Pocket Maximum</td><td>The most the insured individual has to pay for covered services in a plan year. After this amount is spent on deductibles, copayments, and coinsurance for in-network care and services, the health plan pays 100% of the costs of covered benefits.</td></tr><tr><td style=\"white-space:nowrap\">visit<a name=\"PCTFinancialType-visit\"> </a></td><td>Visit</td><td>A medical visit means diagnostic, therapeutic, or consultative services provided to a client by a healthcare professional in an outpatient setting.</td></tr><tr><td style=\"white-space:nowrap\">penalty<a name=\"PCTFinancialType-penalty\"> </a></td><td>Penalty</td><td>Benefit penalty is an approach used by the insurance company to reduce their payment on a claim when the patient or medical provider does not satisfy the rules of the health plan. Benefit penalties may occur when a pre-authorization is not obtained, for example.</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fm"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-pct/ImplementationGuide/hl7.fhir.us.davinci-pct"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTFinancialType",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.16.8"
+  }],
+  "version" : "2.0.0-ballot",
+  "name" : "PCTFinancialType",
+  "title" : "PCT Financial Type Code System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-04-12T09:35:40-07:00",
+  "publisher" : "HL7 International / Financial Management",
+  "contact" : [{
+    "name" : "HL7 International / Financial Management",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fm"
+    },
+    {
+      "system" : "email",
+      "value" : "fmlists@lists.hl7.org"
+    }]
+  }],
+  "description" : "Financial Type codes for benefitBalance.financial.type. This CodeSystem is currently defined by this IG, but is anticipated to be temporary. The concepts within are expected to be moved in a future version to a more central terminology specification such as THO, which will result in a code system url change and possibly modified codes and definitions.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "copyright" : "This CodeSystem is not copyrighted.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "allowed",
+    "display" : "Allowed",
+    "definition" : "The maximum amount a plan will pay for a covered health care service. May also be called \"payment allowance\", or \"negotiated rate\"."
+  },
+  {
+    "code" : "coinsurance",
+    "display" : "Co-Insurance",
+    "definition" : "The amount the insured individual pays, as a set percentage of the cost of covered services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%."
+  },
+  {
+    "code" : "copay",
+    "display" : "CoPay",
+    "definition" : "A fixed amount ($20, for example) the insured individual pays for a covered health care service after the deductible is paid."
+  },
+  {
+    "code" : "deductible",
+    "display" : "Deductible",
+    "definition" : "The amount the insured individual pays for covered health care services before the insurance plan starts to pay."
+  },
+  {
+    "code" : "eligible",
+    "display" : "Eligible Amount",
+    "definition" : "Amount of the charge which is considered for adjudication."
+  },
+  {
+    "code" : "memberliability",
+    "display" : "Member Liability",
+    "definition" : "The amount of the member's liability."
+  },
+  {
+    "code" : "noncovered",
+    "display" : "Noncovered",
+    "definition" : "The portion of the cost of the service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract."
+  },
+  {
+    "code" : "out-of-pocket-maximum",
+    "display" : "Out-of-Pocket Maximum",
+    "definition" : "The most the insured individual has to pay for covered services in a plan year. After this amount is spent on deductibles, copayments, and coinsurance for in-network care and services, the health plan pays 100% of the costs of covered benefits."
+  },
+  {
+    "code" : "visit",
+    "display" : "Visit",
+    "definition" : "A medical visit means diagnostic, therapeutic, or consultative services provided to a client by a healthcare professional in an outpatient setting."
+  },
+  {
+    "code" : "penalty",
+    "display" : "Penalty",
+    "definition" : "Benefit penalty is an approach used by the insurance company to reduce their payment on a claim when the patient or medical provider does not satisfy the rules of the health plan. Benefit penalties may occur when a pre-authorization is not obtained, for example."
+  }]
+}
