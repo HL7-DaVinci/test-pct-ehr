@@ -12,6 +12,7 @@ import com.lantanagroup.servers.uscoreserver.UsCoreServerProperties;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import ca.uhn.fhir.jpa.api.dao.DaoRegistry;
+import ca.uhn.fhir.jpa.api.dao.IFhirResourceDao;
 import ca.uhn.fhir.rest.api.server.RequestDetails;
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.interceptor.api.Hook;
@@ -21,7 +22,9 @@ import ca.uhn.fhir.parser.IParser;
 import ca.uhn.fhir.rest.api.MethodOutcome;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
 
+import org.apache.poi.ss.formula.functions.T;
 import org.hl7.fhir.r4.model.*;
+import org.hl7.fhir.r4.model.codesystems.ResourceTypes;
 
 // TODO, no need to use client for updating. Consider moving to Dao transactions.
 // Also switch over to a common framework for preloading resources.
@@ -168,70 +171,135 @@ public class ProcessCustomizer {
 
     }
 
-    @Hook(Pointcut.SERVER_INCOMING_REQUEST_PRE_PROCESSED)
+    //@Hook(Pointcut.SERVER_INCOMING_REQUEST_PRE_PROCESSED)
+    @Hook(Pointcut.SERVER_INCOMING_REQUEST_PRE_HANDLER_SELECTED)
     public boolean incomingRequestPreProcessed(RequestDetails theRequestDetails, HttpServletRequest theRequest,
             HttpServletResponse theResponse) {
-        // String[] parts = theRequest.getRequestURI().toString().split("/");
-        // Here is where the Claim should be evaluated
+        
         if (!dataLoaded) {
-
-            // client =
-            // fhirContext.newRestfulGenericClient(theRequestDetails.getFhirServerBase() +
-            // "/fhir");
-            // String test = theRequest.getScheme() + "://" + theRequest.getServerName() +
-            // ":" + theRequest.getServerPort() + theRequest.getContextPath();
-            client = fhirContext.newRestfulGenericClient(theRequest.getScheme() + "://" + theRequest.getServerName() + ":" + theRequest.getServerPort() + "/fhir");
+            
             dataLoaded = true;
-            System.out.println("First request made to Server: " + theRequest.getScheme() + "://" + theRequest.getServerName() + ":" + theRequest.getServerPort() + "/fhir");
-            System.out.println("Loading all data");
+            System.out.println("Loading initial data");
 
             try{
                 
                 for (String filename : getServerResources("ri_resources", "StructureDefinition-*.json")) {
-                    loadDataStructureDefinition(filename);
-                }
-                for (String filename : getServerResources("ri_resources", "ValueSet-*.json")) {
-                    loadDataValueSet(filename);
+                    try {
+                        System.out.println("Uploading resource " + filename);
+                        theDaoRegistry.getResourceDao(StructureDefinition.class).update(jparser.parseResource(StructureDefinition.class, util.loadResource(filename)), theRequestDetails);
+                    } catch (Exception e) {
+                        System.out.println("Failure to update the StructureDefinition: " + e.getMessage());
+                    }
                 }
                 for (String filename : getServerResources("ri_resources", "CodeSystem-*.json")) {
-                    loadDataCodeSystem(filename);
+                    try {
+                        System.out.println("Uploading resource " + filename);
+                        theDaoRegistry.getResourceDao(CodeSystem.class).update(jparser.parseResource(CodeSystem.class, util.loadResource(filename)), theRequestDetails);
+                    } catch (Exception e) {
+                        System.out.println("Failure to update the CodeSystem: " + e.getMessage());
+                    }
                 }
+                for (String filename : getServerResources("ri_resources", "ValueSet-*.json")) {
+                    try {
+                        System.out.println("Uploading resource " + filename);
+                        theDaoRegistry.getResourceDao(ValueSet.class).update(jparser.parseResource(ValueSet.class, util.loadResource(filename)), theRequestDetails);
+                    } catch (Exception e) {
+                        System.out.println("Failure to update the ValueSet: " + e.getMessage());
+                    }
+                }
+                
                 for (String filename : getServerResources("ri_resources", "OperationDefinition-*.json")) {
-                    loadDataOperationDefinition(filename);
+                    try {
+                        System.out.println("Uploading resource " + filename);
+                        theDaoRegistry.getResourceDao(OperationDefinition.class).update(jparser.parseResource(OperationDefinition.class, util.loadResource(filename)), theRequestDetails);
+                    } catch (Exception e) {
+                        System.out.println("Failure to update the OperationDefinition: " + e.getMessage());
+                    }
                 }
                 for (String filename : getServerResources("ri_resources", "Organization-*.json")) {
-                    loadDataOrganization(filename);
+                    try {
+                        System.out.println("Uploading resource " + filename);
+                        theDaoRegistry.getResourceDao(Organization.class).update(jparser.parseResource(Organization.class, util.loadResource(filename)), theRequestDetails);
+                    } catch (Exception e) {
+                        System.out.println("Failure to update the Organization: " + e.getMessage());
+                    }
                 }
                 for (String filename : getServerResources("ri_resources", "Patient-*.json")) {
-                    loadDataPatient(filename);
+                    try {
+                        System.out.println("Uploading resource " + filename);
+                        theDaoRegistry.getResourceDao(Patient.class).update(jparser.parseResource(Patient.class, util.loadResource(filename)), theRequestDetails);
+                    } catch (Exception e) {
+                        System.out.println("Failure to update the Patient: " + e.getMessage());
+                    }
                 }
                 
                 for (String filename : getServerResources("ri_resources", "Practitioner-*.json")) {
-                    loadDataPractitioner(filename);
-                }
-                for (String filename : getServerResources("ri_resources", "PractitionerRole-*.json")) {
-                    loadDataPractitionerRole(filename);
+                    try {
+                        System.out.println("Uploading resource " + filename);
+                        theDaoRegistry.getResourceDao(Practitioner.class).update(jparser.parseResource(Practitioner.class, util.loadResource(filename)), theRequestDetails);
+                    } catch (Exception e) {
+                        System.out.println("Failure to update the Practitioner: " + e.getMessage());
+                    }
                 }
 
                 for (String filename : getServerResources("ri_resources", "Endpoint-*.json")) {
-                    loadDataEndpoint(filename);
+                    try {
+                        System.out.println("Uploading resource " + filename);
+                        theDaoRegistry.getResourceDao(Endpoint.class).update(jparser.parseResource(Endpoint.class, util.loadResource(filename)), theRequestDetails);
+                    } catch (Exception e) {
+                        System.out.println("Failure to update the Endpoint: " + e.getMessage());
+                    }
                 }
                 for (String filename : getServerResources("ri_resources", "Contract-*.json")) {
-                    loadDataContract(filename);
+                    try {
+                        System.out.println("Uploading resource " + filename);
+                        theDaoRegistry.getResourceDao(Contract.class).update(jparser.parseResource(Contract.class, util.loadResource(filename)), theRequestDetails);
+                    } catch (Exception e) {
+                        System.out.println("Failure to update the Contract: " + e.getMessage());
+                    }
                 }
                 for (String filename : getServerResources("ri_resources", "Coverage-*.json")) {
-                    loadDataCoverage(filename);
+                    try {
+                        System.out.println("Uploading resource " + filename);
+                        theDaoRegistry.getResourceDao(Coverage.class).update(jparser.parseResource(Coverage.class, util.loadResource(filename)), theRequestDetails);
+                    } catch (Exception e) {
+                        System.out.println("Failure to update the Coverage: " + e.getMessage());
+                    }
                 }
                 for (String filename : getServerResources("ri_resources", "Location-*.json")) {
-                    loadDataLocation(filename);
+                    try {
+                        System.out.println("Uploading resource " + filename);
+                        theDaoRegistry.getResourceDao(Location.class).update(jparser.parseResource(Location.class, util.loadResource(filename)), theRequestDetails);
+                    } catch (Exception e) {
+                        System.out.println("Failure to update the Location: " + e.getMessage());
+                    }
+                }
+                for (String filename : getServerResources("ri_resources", "PractitionerRole-*.json")) {
+                    try {
+                        System.out.println("Uploading resource " + filename);
+                        theDaoRegistry.getResourceDao(PractitionerRole.class).update(jparser.parseResource(PractitionerRole.class, util.loadResource(filename)), theRequestDetails);
+                    } catch (Exception e) {
+                        System.out.println("Failure to update the PractitionerRole: " + e.getMessage());
+                    }
                 }
                 for (String filename : getServerResources("ri_resources", "Claim-*.json")) {
-                    loadDataClaim(filename);
+                    try {
+                        System.out.println("Uploading resource " + filename);
+                        theDaoRegistry.getResourceDao(Claim.class).update(jparser.parseResource(Claim.class, util.loadResource(filename)), theRequestDetails);
+                    } catch (Exception e) {
+                        System.out.println("Failure to update the Claim: " + e.getMessage());
+                    }
                 }
 
                 for (String filename : getServerResources("ri_resources", "ExplanationOfBenefit-*.json")) {
-                    loadDataExplanationOfBenefit(filename);
+                    try {
+                        System.out.println("Uploading resource " + filename);
+                        theDaoRegistry.getResourceDao(ExplanationOfBenefit.class).update(jparser.parseResource(ExplanationOfBenefit.class, util.loadResource(filename)), theRequestDetails);
+                    } catch (Exception e) {
+                        System.out.println("Failure to update the ExplanationOfBenefit: " + e.getMessage());
+                    }
                 }
+                
 
             }
             catch(Exception e)
@@ -241,174 +309,7 @@ public class ProcessCustomizer {
         }
         return true;
     }
-
-
-    public void loadDataStructureDefinition(String resource) {
-        String p = util.loadResource(resource);
-        StructureDefinition r = jparser.parseResource(StructureDefinition.class, p);
-        try {
-            System.out.println("Uploading resource " + resource);
-            MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
-        } catch (Exception e) {
-            
-            System.out.println("Failure to update the StructureDefinition: " + e.getMessage());
-        }
-    }
-
-    public void loadDataValueSet(String resource) {
-        String p = util.loadResource(resource);
-        ValueSet r = jparser.parseResource(ValueSet.class, p);
-        try {
-            System.out.println("Uploading resource " + resource);
-            MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
-        } catch (Exception e) {
-            System.out.println("Failure to update the ValueSet");
-        }
-    }
-
-    public void loadDataCodeSystem(String resource) {
-        String p = util.loadResource(resource);
-        CodeSystem r = jparser.parseResource(CodeSystem.class, p);
-        try {
-            System.out.println("Uploading resource " + resource);
-            MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
-        } catch (Exception e) {
-            System.out.println("Failure to update the CodeSystem");
-        }
-    }
-
-    public void loadDataOperationDefinition(String resource) {
-        String p = util.loadResource(resource);
-        OperationDefinition r = jparser.parseResource(OperationDefinition.class, p);
-        try {
-            System.out.println("Uploading resource " + resource);
-            MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
-        } catch (Exception e) {
-            System.out.println("Failure to update the OperationDefinition");
-        }
-    }
-
-    public void loadDataOrganization(String resource) {
-        String p = util.loadResource(resource);
-        Organization r = jparser.parseResource(Organization.class, p);
-        try {
-            System.out.println("Uploading resource " + resource);
-            MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
-        } catch (Exception e) {
-            System.out.println("Failure to update the Organization");
-        }
-    }
-
-    public void loadDataPatient(String resource) {
-        String p = util.loadResource(resource);
-        Patient r = jparser.parseResource(Patient.class, p);
-        try {
-            System.out.println("Uploading resource " + resource);
-            MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
-        } catch (Exception e) {
-            System.out.println("Failure to update the Patient");
-        }
-    }
-
-    public void loadDataPractitioner(String resource) {
-        String p = util.loadResource(resource);
-        Practitioner r = jparser.parseResource(Practitioner.class, p);
-        try {
-            System.out.println("Uploading resource " + resource);
-            MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
-        } catch (Exception e) {
-            System.out.println("Failure to update the Practitioner");
-        }
-    }
-
-    public void loadDataContract(String resource) {
-        String p = util.loadResource(resource);
-        Contract r = jparser.parseResource(Contract.class, p);
-        try {
-            System.out.println("Uploading resource " + resource);
-            MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
-        } catch (Exception e) {
-            System.out.println("Failure to update the Contract");
-        }
-    }
-
-    public void loadDataCoverage(String resource) {
-        String p = util.loadResource(resource);
-        Coverage r = jparser.parseResource(Coverage.class, p);
-        try {
-            System.out.println("Uploading resource " + resource);
-            MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
-        } catch (Exception e) {
-            System.out.println("Failure to update the Coverage");
-        }
-    }
-
-    public void loadDataLocation(String resource) {
-        String p = util.loadResource(resource);
-        Location r = jparser.parseResource(Location.class, p);
-        try {
-            System.out.println("Uploading resource " + resource);
-            MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
-        } catch (Exception e) {
-            System.out.println("Failure to update the Location");
-        }
-    }
-
-    public void loadDataClaim(String resource) {
-        String p = util.loadResource(resource);
-        Claim r = jparser.parseResource(Claim.class, p);
-        try {
-            System.out.println("Uploading resource " + resource);
-            MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
-        } catch (Exception e) {
-            System.out.println("Failure to update the Claim");
-        }
-    }
-
-    public void loadDataExplanationOfBenefit(String resource) {
-        String p = util.loadResource(resource);
-        ExplanationOfBenefit r = jparser.parseResource(ExplanationOfBenefit.class, p);
-        try {
-            System.out.println("Uploading resource " + resource);
-            MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
-        } catch (Exception e) {
-            System.out.println("Failure to update the ExplanationOfBenefit");
-        }
-    }
-
-    public void loadDataPractitionerRole(String resource) {
-        String p = util.loadResource(resource);
-        PractitionerRole r = jparser.parseResource(PractitionerRole.class, p);
-        try {
-            System.out.println("Uploading resource " + resource);
-            MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
-        } catch (Exception e) {
-            System.out.println("Failure to update the PractitionerRole");
-        }
-    }
-
-    public void loadDataBundle(String resource) {
-        String p = util.loadResource(resource);
-        Bundle r = jparser.parseResource(Bundle.class, p);
-        try {
-            System.out.println("Uploading resource " + resource);
-            MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
-        } catch (Exception e) {
-            System.out.println("Failure to update the Bundle");
-        }
-    }
-
-    public void loadDataEndpoint(String resource) {
-        String p = util.loadResource(resource);
-        Endpoint r = jparser.parseResource(Endpoint.class, p);
-        try {
-            System.out.println("Uploading resource " + resource);
-            MethodOutcome outcome = client.update().resource(r).prettyPrint().encodedJson().execute();
-        } catch (Exception e) {
-            System.out.println("Failure to update the Bundle");
-        }
-    }
-
+    
 
 
     public List<String> getServerResources(String path, String pattern)
@@ -425,16 +326,10 @@ public class ProcessCustomizer {
             
             ClassLoader cl = this.getClass().getClassLoader(); 
             ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver(cl);
-            //ces("classpath*:/*.json") ;
-//org.springframework.core.io.Resource[] resources = resolver.getResources("classpath*:/" + localPath + pattern);
-            //org.springframework.core.io.Resource[] resources = resolver.getResources("classpath*:ri_resources/*.json");
+
             org.springframework.core.io.Resource[] resources = resolver.getResources("classpath*:" + localPath + pattern);
 
-            //org.springframework.core.io.Resource[] resources2 = resolver.getResources("classpath*:/*.json");
             org.springframework.core.io.Resource[] resources2 = resolver.getResources("classpath*/ri_resources/a_resources/*.json");
-            
-
-
             
             for (org.springframework.core.io.Resource resource: resources){
                 files.add(localPath + resource.getFilename());

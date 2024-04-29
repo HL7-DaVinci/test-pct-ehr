@@ -9,7 +9,7 @@
             "name": "PctEhrServerRiApplication",
             "request": "launch",
             "mainClass": "com.lantanagroup.PctEhrServerRiApplication",
-            "projectName": "hapi-fhir-jpaserver-starter"
+            "projectName": "reference-implementation"
         }
     ]
 }
