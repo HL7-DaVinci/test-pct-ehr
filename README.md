@@ -1,3 +1,7 @@
+### Foundry
+A live demo is hosted by [HL7 FHIR Foundry](https://foundry.hl7.org/products/df5b02a1-7423-4154-b1b5-503bcdfbf713), where you may also download curated configurations to run yourself.
+
+### Install
 FEapiproject/hapi:latest
 ```
 
