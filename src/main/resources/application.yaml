@@ -31,6 +31,8 @@ uscoreserver:
     username: sa
     password: null
     driverClassName: org.h2.Driver
+
+  allow_external_references: true
   # enforce_referential_integrity_on_delete: false
   # enforce_referential_integrity_on_write: false
   cors:
