@@ -33,6 +33,9 @@ uscoreserver:
     driverClassName: org.h2.Driver
 
   allow_external_references: true
+
+  initialdata:
+    - ri_resources
   # enforce_referential_integrity_on_delete: false
   # enforce_referential_integrity_on_write: false
   cors:

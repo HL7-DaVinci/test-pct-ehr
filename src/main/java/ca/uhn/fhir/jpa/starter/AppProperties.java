@@ -91,6 +91,7 @@ public class AppProperties {
   private Integer bundle_batch_pool_max_size = 100;
   private final Set<String> local_base_urls = new HashSet<>();
   private final Set<String> logical_urls = new HashSet<>();
+  private List<String> initialData = new ArrayList<>();
 
   private final List<String> custom_interceptor_classes = new ArrayList<>();
 
@@ -594,6 +595,13 @@ public Cors getCors() {
 		return logical_urls;
 	}
 
+    public List<String> getInitialData() {
+        return initialData;
+    }
+
+    public void setInitialData(List<String> initialData) {
+        this.initialData = initialData;
+    }
 
 	public Boolean getIg_runtime_upload_enabled() {
 		return ig_runtime_upload_enabled;

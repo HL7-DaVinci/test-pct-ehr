@@ -1,5 +1,6 @@
 package com.lantanagroup.servers.uscoreserver;
 
+import com.lantanagroup.DataInitializer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchRestClientAutoConfiguration;
@@ -13,7 +14,6 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.PropertySource;
 
 import com.lantanagroup.common.CapabilityStatementCustomizer;
-import com.lantanagroup.common.ProcessCustomizer;
 import com.lantanagroup.common.CommonConfig;
 import com.lantanagroup.providers.DocrefOperation;
 
@@ -65,7 +65,6 @@ public class UsCoreServerConfig extends CommonConfig {
 
     restfulServer.registerInterceptor(new ResponseHighlighterInterceptor());
     restfulServer.registerInterceptor(new CapabilityStatementCustomizer(restfulServer.getFhirContext(), "uscoreserver"));
-    restfulServer.registerInterceptor(new ProcessCustomizer(restfulServer.getFhirContext(), daoRegistry, "uscoreserver"));
 
     restfulServer.registerProviders(
         new DocrefOperation()
@@ -75,5 +74,9 @@ public class UsCoreServerConfig extends CommonConfig {
     registration.setLoadOnStartup(1);
     return registration;
   }
-  
+
+  @Bean
+  public DataInitializer dataInitializer() {
+    return new DataInitializer();
+  }
 }
