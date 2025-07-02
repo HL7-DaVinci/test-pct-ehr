@@ -3,7 +3,7 @@
   "id" : "PCTAdjudication",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTAdjudication</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">coinsurance<a name=\"PCTAdjudication-coinsurance\"> </a></td><td>Co-insurance</td><td>The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%.</td></tr><tr><td style=\"white-space:nowrap\">noncovered<a name=\"PCTAdjudication-noncovered\"> </a></td><td>Noncovered</td><td>The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</td></tr><tr><td style=\"white-space:nowrap\">memberliability<a name=\"PCTAdjudication-memberliability\"> </a></td><td>Member liability</td><td>The amount of the member's liability.</td></tr><tr><td style=\"white-space:nowrap\">discount<a name=\"PCTAdjudication-discount\"> </a></td><td>Discount</td><td>The amount of the discount</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PCTAdjudication</b></p><a name=\"PCTAdjudication\"> </a><a name=\"hcPCTAdjudication\"> </a><a name=\"PCTAdjudication-en-US\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTAdjudication</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">coinsurance<a name=\"PCTAdjudication-coinsurance\"> </a></td><td>Co-insurance</td><td>The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%.</td></tr><tr><td style=\"white-space:nowrap\">noncovered<a name=\"PCTAdjudication-noncovered\"> </a></td><td>Noncovered</td><td>The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</td></tr><tr><td style=\"white-space:nowrap\">memberliability<a name=\"PCTAdjudication-memberliability\"> </a></td><td>Member liability</td><td>The amount of the member's liability.</td></tr><tr><td style=\"white-space:nowrap\">discount<a name=\"PCTAdjudication-discount\"> </a></td><td>Discount</td><td>The amount of the discount</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -24,12 +24,12 @@
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.16.2"
   }],
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0-draft",
   "name" : "PCTAdjudication",
   "title" : "PCT Adjudication Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-04-12T09:35:40-07:00",
+  "date" : "2025-06-03T13:32:08+00:00",
   "publisher" : "HL7 International / Financial Management",
   "contact" : [{
     "name" : "HL7 International / Financial Management",

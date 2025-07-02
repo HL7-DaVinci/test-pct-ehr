@@ -1,0 +1,71 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PCTDocumentSection",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PCTDocumentSection</b></p><a name=\"PCTDocumentSection\"> </a><a name=\"hcPCTDocumentSection\"> </a><a name=\"PCTDocumentSection-en-US\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTDocumentSection</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">aeob-summary-section<a name=\"PCTDocumentSection-aeob-summary-section\"> </a></td><td>AEOB Summary</td><td>The Advanced Explanation of Benefit (AEOB) Summary Packet Section</td></tr><tr><td style=\"white-space:nowrap\">aeob-section<a name=\"PCTDocumentSection-aeob-section\"> </a></td><td>AEOB Section</td><td>The Advanced Explanation of Benefit (AEOB) Packet Section</td></tr><tr><td style=\"white-space:nowrap\">gfe-section<a name=\"PCTDocumentSection-gfe-section\"> </a></td><td>GFE Section</td><td>A Good Faith Estimate (GFE) Packet Section (one per provider)</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fm"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-pct/ImplementationGuide/hl7.fhir.us.davinci-pct"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTDocumentSection",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.16.19"
+  }],
+  "version" : "2.0.0-draft",
+  "name" : "PCTDocumentSection",
+  "title" : "PCT Packet Section Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-06-03T13:32:08+00:00",
+  "publisher" : "HL7 International / Financial Management",
+  "contact" : [{
+    "name" : "HL7 International / Financial Management",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fm"
+    },
+    {
+      "system" : "email",
+      "value" : "fmlists@lists.hl7.org"
+    }]
+  }],
+  "description" : "Defining codes for the sections found in packets (document bundles) used for Patient Cost Transparency estimates.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "copyright" : "This CodeSystem is not copyrighted.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "aeob-summary-section",
+    "display" : "AEOB Summary",
+    "definition" : "The Advanced Explanation of Benefit (AEOB) Summary Packet Section"
+  },
+  {
+    "code" : "aeob-section",
+    "display" : "AEOB Section",
+    "definition" : "The Advanced Explanation of Benefit (AEOB) Packet Section"
+  },
+  {
+    "code" : "gfe-section",
+    "display" : "GFE Section",
+    "definition" : "A Good Faith Estimate (GFE) Packet Section (one per provider)"
+  }]
+}

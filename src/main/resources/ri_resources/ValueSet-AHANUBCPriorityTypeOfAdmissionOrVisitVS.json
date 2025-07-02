@@ -3,7 +3,7 @@
   "id" : "AHANUBCPriorityTypeOfAdmissionOrVisitVS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://terminology.hl7.org/CodeSystem/AHANUBCPriorityTypeOfAdmitOrVisit</code></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AHANUBCPriorityTypeOfAdmissionOrVisitVS</b></p><a name=\"AHANUBCPriorityTypeOfAdmissionOrVisitVS\"> </a><a name=\"hcAHANUBCPriorityTypeOfAdmissionOrVisitVS\"> </a><a name=\"AHANUBCPriorityTypeOfAdmissionOrVisitVS-en-US\"> </a><ul><li>Include all codes defined in <code>http://terminology.hl7.org/CodeSystem/AHANUBCPriorityTypeOfAdmitOrVisit</code></li></ul></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -24,12 +24,12 @@
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.48.2"
   }],
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0-draft",
   "name" : "AHANUBCPriorityTypeOfAdmissionOrVisitVS",
   "title" : "NUBC Priority (Type) of Admission or Visit",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-04-12T09:35:40-07:00",
+  "date" : "2025-06-03T13:32:08+00:00",
   "publisher" : "HL7 International / Financial Management",
   "contact" : [{
     "name" : "HL7 International / Financial Management",
@@ -42,7 +42,7 @@
       "value" : "fmlists@lists.hl7.org"
     }]
   }],
-  "description" : "The UB-04 Data File contains the complete set of NUBC codes. Every code in the range of possible codes is accounted for sequentially. There are no gaps because all used and unused codes are identified.\r\n\r\nThis value set consists of the following:\r\n\r\n* FL 14 - Priority (Type) of Admission or Visit\r\n\r\nThese codes are used to convey the priority of an admission or visit and are the property of the American Hospital Association.\r\n\r\nTo obtain the underlying code systems, please see information [here](https://www.nubc.org/subscription-information)\r\n\r\nStatement of Understanding between AHA and HL7 can be found [here](http://www.hl7.org/documentcenter/public/mou/AHA%20HL7%20SOU%202020%20AHA%20Fully%20Executed.pdf). In particular see sections 4.1d and 4.2.\r\n\r\nThe UB-04 Manual has a 12-month subscription period from June 30 through July 1.\r\n\r\nFor frequently asked questions, see here [here](https://www.nubc.org/nubc-faqs)\r\n\r\nThis Code system is referenced in the content logical definition of the following value sets:\r\n\r\nThis CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)\r\n\r\nThis code system https://www.nubc.org/CodeSystem/PriorityTypeOfAdmitOrVisit defines many codes, but they are not represented here",
+  "description" : "The UB-04 Data File contains the complete set of NUBC codes. Every code in the range of possible codes is accounted for sequentially. There are no gaps because all used and unused codes are identified.\n\nThis value set consists of the following:\n\n* FL 14 - Priority (Type) of Admission or Visit\n\nThese codes are used to convey the priority of an admission or visit and are the property of the American Hospital Association.\n\nTo obtain the underlying code systems, please see information [here](https://www.nubc.org/subscription-information)\n\nStatement of Understanding between AHA and HL7 can be found [here](http://www.hl7.org/documentcenter/public/mou/AHA%20HL7%20SOU%202020%20AHA%20Fully%20Executed.pdf). In particular see sections 4.1d and 4.2.\n\nThe UB-04 Manual has a 12-month subscription period from June 30 through July 1.\n\nFor frequently asked questions, see here [here](https://www.nubc.org/nubc-faqs)\n\nThis Code system is referenced in the content logical definition of the following value sets:\n\nThis CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)\n\nThis code system https://www.nubc.org/CodeSystem/PriorityTypeOfAdmitOrVisit defines many codes, but they are not represented here",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

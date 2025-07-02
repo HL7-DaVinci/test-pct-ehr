@@ -3,7 +3,7 @@
   "id" : "PCTDiagnosisType",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTDiagnosisType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">patientReasonForVisit<a name=\"PCTDiagnosisType-patientReasonForVisit\"> </a></td><td>Patient's Reason for Visit</td><td>Identifies the patient's reason for the outpatient institutional visit</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"PCTDiagnosisType-other\"> </a></td><td>Other</td><td>Required when other conditions coexist or develop subsequently during the treatment</td></tr><tr><td style=\"white-space:nowrap\">externalCauseOfInjury<a name=\"PCTDiagnosisType-externalCauseOfInjury\"> </a></td><td>External Cause of Injury</td><td>Required when an external cause of injury is needed to describe the injury</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PCTDiagnosisType</b></p><a name=\"PCTDiagnosisType\"> </a><a name=\"hcPCTDiagnosisType\"> </a><a name=\"PCTDiagnosisType-en-US\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTDiagnosisType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">patientReasonForVisit<a name=\"PCTDiagnosisType-patientReasonForVisit\"> </a></td><td>Patient's Reason for Visit</td><td>Identifies the patient's reason for the outpatient institutional visit</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"PCTDiagnosisType-other\"> </a></td><td>Other</td><td>Required when other conditions coexist or develop subsequently during the treatment</td></tr><tr><td style=\"white-space:nowrap\">externalCauseOfInjury<a name=\"PCTDiagnosisType-externalCauseOfInjury\"> </a></td><td>External Cause of Injury</td><td>Required when an external cause of injury is needed to describe the injury</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -24,12 +24,12 @@
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.16.6"
   }],
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0-draft",
   "name" : "PCTDiagnosisType",
   "title" : "PCT Diagnosis Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-04-12T09:35:40-07:00",
+  "date" : "2025-06-03T13:32:08+00:00",
   "publisher" : "HL7 International / Financial Management",
   "contact" : [{
     "name" : "HL7 International / Financial Management",

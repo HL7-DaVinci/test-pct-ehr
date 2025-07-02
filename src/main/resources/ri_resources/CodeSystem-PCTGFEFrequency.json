@@ -3,7 +3,7 @@
   "id" : "PCTGFEFrequency",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEFrequency</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"PCTGFEFrequency-1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"PCTGFEFrequency-7\"> </a></td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"PCTGFEFrequency-8\"> </a></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PCTGFEFrequency</b></p><a name=\"PCTGFEFrequency\"> </a><a name=\"hcPCTGFEFrequency\"> </a><a name=\"PCTGFEFrequency-en-US\"> </a><p>This case-insensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTGFEFrequency</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"PCTGFEFrequency-1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"PCTGFEFrequency-7\"> </a></td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"PCTGFEFrequency-8\"> </a></td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -24,12 +24,12 @@
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.16.9"
   }],
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0-draft",
   "name" : "PCTGFEFrequency",
   "title" : "PCT GFE Frequency Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-04-12T09:35:40-07:00",
+  "date" : "2025-06-03T13:32:08+00:00",
   "publisher" : "HL7 International / Financial Management",
   "contact" : [{
     "name" : "HL7 International / Financial Management",

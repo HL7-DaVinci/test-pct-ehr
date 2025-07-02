@@ -3,7 +3,7 @@
   "id" : "PCTAEOBProcessNoteCS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTAEOBProcessNoteCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">disclaimer<a name=\"PCTAEOBProcessNoteCS-disclaimer\"> </a></td><td>Disclaimer</td><td>Indicates a disclaimer type of process note</td></tr><tr><td style=\"white-space:nowrap\">adjudication-note<a name=\"PCTAEOBProcessNoteCS-adjudication-note\"> </a></td><td>Adjudication Note</td><td>Indicates an adjudication note type of process note</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"PCTAEOBProcessNoteCS-other\"> </a></td><td>Other</td><td>Indicates other type of AEOB process note</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PCTAEOBProcessNoteCS</b></p><a name=\"PCTAEOBProcessNoteCS\"> </a><a name=\"hcPCTAEOBProcessNoteCS\"> </a><a name=\"PCTAEOBProcessNoteCS-en-US\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTAEOBProcessNoteCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">disclaimer<a name=\"PCTAEOBProcessNoteCS-disclaimer\"> </a></td><td>Disclaimer</td><td>Indicates a disclaimer type of process note</td></tr><tr><td style=\"white-space:nowrap\">adjudication-note<a name=\"PCTAEOBProcessNoteCS-adjudication-note\"> </a></td><td>Adjudication Note</td><td>Indicates an adjudication note type of process note</td></tr><tr><td style=\"white-space:nowrap\">conditional<a name=\"PCTAEOBProcessNoteCS-conditional\"> </a></td><td>Conditional</td><td>Indicates a conditional type of note which supplements information that is already included in the required Medical Management or Prior Authorization information.  A process note that includes information about conditional factors of the estimate not captured in the originating GFE submission of  the advanced explanation of benefit.</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"PCTAEOBProcessNoteCS-other\"> </a></td><td>Other</td><td>Indicates other type of AEOB process note</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -24,12 +24,12 @@
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.16.1"
   }],
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0-draft",
   "name" : "PCTAEOBProcessNoteCS",
   "title" : "PCT AEOB Process Note Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-04-12T09:35:40-07:00",
+  "date" : "2025-06-03T13:32:08+00:00",
   "publisher" : "HL7 International / Financial Management",
   "contact" : [{
     "name" : "HL7 International / Financial Management",
@@ -52,7 +52,7 @@
   "copyright" : "This CodeSystem is not copyrighted.",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 3,
+  "count" : 4,
   "concept" : [{
     "code" : "disclaimer",
     "display" : "Disclaimer",
@@ -62,6 +62,11 @@
     "code" : "adjudication-note",
     "display" : "Adjudication Note",
     "definition" : "Indicates an adjudication note type of process note"
+  },
+  {
+    "code" : "conditional",
+    "display" : "Conditional",
+    "definition" : "Indicates a conditional type of note which supplements information that is already included in the required Medical Management or Prior Authorization information.  A process note that includes information about conditional factors of the estimate not captured in the originating GFE submission of  the advanced explanation of benefit."
   },
   {
     "code" : "other",

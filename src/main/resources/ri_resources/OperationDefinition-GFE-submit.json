@@ -2,8 +2,8 @@
   "resourceType" : "OperationDefinition",
   "id" : "GFE-submit",
   "text" : {
-    "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/Claim/$gfe-submit</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>resource</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></td><td/><td><div><p>A Bundle containing a single or multiple GFE resources plus referenced resources.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/operationoutcome.html\">OperationOutcome</a></td><td/><td><div><p>When successful, this will return a Bundle of type batch-submit; When there is an error calling $gfe-submit (4xx, 5xx HTTP code) then an OperationOutcome must be returned per the <a href=\"https://hl7.org/fhir/R5/async-bundle.html\">async pattern</a>.</p>\n</div></td></tr></table></div>"
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition GFE-submit</b></p><a name=\"GFE-submit\"> </a><a name=\"hcGFE-submit\"> </a><a name=\"GFE-submit-en-US\"> </a><p>URL: [base]/Claim/$gfe-submit</p><p>Input parameters Profile:<a href=\"StructureDefinition-davinci-pct-gfe-packet.html\">PCT GFE Packet</a></p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>resource</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a> (<a href=\"StructureDefinition-davinci-pct-gfe-packet.html\" title=\"http://hl7.org/fhir/us/davinci-pct/StructureDefinition/davinci-pct-gfe-packet\">PCT GFE Packet</a>)</td><td/><td><div><p>A Bundle containing a single or multiple GFE resources plus referenced resources.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/operationoutcome.html\">OperationOutcome</a></td><td/><td><div><p>When successful, this will return a Bundle of type batch-submit; When there is an error calling $gfe-submit (4xx, 5xx HTTP code) then an OperationOutcome must be returned per the <a href=\"https://hl7.org/fhir/R5/async-bundle.html\">async pattern</a>.</p>\n</div></td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -20,12 +20,12 @@
     }
   }],
   "url" : "http://hl7.org/fhir/us/davinci-pct/OperationDefinition/GFE-submit",
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0-draft",
   "name" : "GFESubmit",
   "title" : "Submit a GFE resource for the creation of an AEOB",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2024-04-12T09:35:40-07:00",
+  "date" : "2025-06-03T13:32:08+00:00",
   "publisher" : "HL7 International / Financial Management",
   "contact" : [{
     "name" : "HL7 International / Financial Management",
@@ -51,13 +51,15 @@
   "system" : false,
   "type" : true,
   "instance" : false,
+  "inputProfile" : "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/davinci-pct-gfe-packet",
   "parameter" : [{
     "name" : "resource",
     "use" : "in",
     "min" : 1,
     "max" : "1",
     "documentation" : "A Bundle containing a single or multiple GFE resources plus referenced resources.",
-    "type" : "Bundle"
+    "type" : "Bundle",
+    "targetProfile" : ["http://hl7.org/fhir/us/davinci-pct/StructureDefinition/davinci-pct-gfe-packet"]
   },
   {
     "name" : "return",

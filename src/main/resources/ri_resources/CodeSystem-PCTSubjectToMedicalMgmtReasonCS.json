@@ -3,7 +3,7 @@
   "id" : "PCTSubjectToMedicalMgmtReasonCS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTSubjectToMedicalMgmtReasonCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">concurrent-review<a name=\"PCTSubjectToMedicalMgmtReasonCS-concurrent-review\"> </a></td><td>Concurrent Review</td><td>Concurrent Review</td></tr><tr><td style=\"white-space:nowrap\">prior-auth<a name=\"PCTSubjectToMedicalMgmtReasonCS-prior-auth\"> </a></td><td>Prior Authorization</td><td>Prior Authorization</td></tr><tr><td style=\"white-space:nowrap\">step-therapy<a name=\"PCTSubjectToMedicalMgmtReasonCS-step-therapy\"> </a></td><td>Step Therapy</td><td>Step Therapy</td></tr><tr><td style=\"white-space:nowrap\">fail-first<a name=\"PCTSubjectToMedicalMgmtReasonCS-fail-first\"> </a></td><td>Fail-First</td><td>Fail-First</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PCTSubjectToMedicalMgmtReasonCS</b></p><a name=\"PCTSubjectToMedicalMgmtReasonCS\"> </a><a name=\"hcPCTSubjectToMedicalMgmtReasonCS\"> </a><a name=\"PCTSubjectToMedicalMgmtReasonCS-en-US\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTSubjectToMedicalMgmtReasonCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">concurrent-review<a name=\"PCTSubjectToMedicalMgmtReasonCS-concurrent-review\"> </a></td><td>Concurrent Review</td><td>Concurrent Review</td></tr><tr><td style=\"white-space:nowrap\">prior-auth<a name=\"PCTSubjectToMedicalMgmtReasonCS-prior-auth\"> </a></td><td>Prior Authorization</td><td>Prior Authorization</td></tr><tr><td style=\"white-space:nowrap\">step-therapy<a name=\"PCTSubjectToMedicalMgmtReasonCS-step-therapy\"> </a></td><td>Step Therapy</td><td>Step Therapy</td></tr><tr><td style=\"white-space:nowrap\">fail-first<a name=\"PCTSubjectToMedicalMgmtReasonCS-fail-first\"> </a></td><td>Fail-First</td><td>Fail-First</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -24,12 +24,12 @@
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.16.16"
   }],
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0-draft",
   "name" : "PCTSubjectToMedicalMgmtReasonCS",
   "title" : "PCT Subject-To-Medical-Management Reason Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-04-12T09:35:40-07:00",
+  "date" : "2025-06-03T13:32:08+00:00",
   "publisher" : "HL7 International / Financial Management",
   "contact" : [{
     "name" : "HL7 International / Financial Management",

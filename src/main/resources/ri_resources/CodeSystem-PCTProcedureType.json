@@ -3,7 +3,7 @@
   "id" : "PCTProcedureType",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTProcedureType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">principal<a name=\"PCTProcedureType-principal\"> </a></td><td>Pricipal</td><td>Principal procedure information</td></tr><tr><td style=\"white-space:nowrap\">procedureRequiringAnesthesia<a name=\"PCTProcedureType-procedureRequiringAnesthesia\"> </a></td><td>Surgical procedure requiring anesthesia</td><td>Identifies the surgical procedure requiring anesthesia</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"PCTProcedureType-other\"> </a></td><td>Other</td><td>Other procedure information</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PCTProcedureType</b></p><a name=\"PCTProcedureType\"> </a><a name=\"hcPCTProcedureType\"> </a><a name=\"PCTProcedureType-en-US\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTProcedureType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">principal<a name=\"PCTProcedureType-principal\"> </a></td><td>Principal</td><td>Principal procedure information</td></tr><tr><td style=\"white-space:nowrap\">procedureRequiringAnesthesia<a name=\"PCTProcedureType-procedureRequiringAnesthesia\"> </a></td><td>Surgical procedure requiring anesthesia</td><td>Identifies the surgical procedure requiring anesthesia</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"PCTProcedureType-other\"> </a></td><td>Other</td><td>Other procedure information</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -24,12 +24,12 @@
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.16.15"
   }],
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0-draft",
   "name" : "PCTProcedureType",
   "title" : "PCT Procedure Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-04-12T09:35:40-07:00",
+  "date" : "2025-06-03T13:32:08+00:00",
   "publisher" : "HL7 International / Financial Management",
   "contact" : [{
     "name" : "HL7 International / Financial Management",
@@ -55,7 +55,7 @@
   "count" : 3,
   "concept" : [{
     "code" : "principal",
-    "display" : "Pricipal",
+    "display" : "Principal",
     "definition" : "Principal procedure information"
   },
   {

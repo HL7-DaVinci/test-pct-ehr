@@ -3,7 +3,7 @@
   "id" : "PCTContributorTaskStatusReasonCodes",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html\"><code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTTaskStatusReasonCSTemporaryTrialUse</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html#PCTTaskStatusReasonCSTemporaryTrialUse-fulfilled\">fulfilled</a></td><td style=\"color: #cccccc\">Fulfilled</td><td>The GFE Request was fulfilled.</td></tr><tr><td><a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html#PCTTaskStatusReasonCSTemporaryTrialUse-schedule\">schedule</a></td><td style=\"color: #cccccc\">Schedule</td><td>Provider cannot participate due to proposed schedule dates and or times.</td></tr><tr><td><a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html#PCTTaskStatusReasonCSTemporaryTrialUse-service-not-provided\">service-not-provided</a></td><td style=\"color: #cccccc\">Service Not Provided</td><td>Services or Products being requested are not available from this GFE contributor.</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PCTContributorTaskStatusReasonCodes</b></p><a name=\"PCTContributorTaskStatusReasonCodes\"> </a><a name=\"hcPCTContributorTaskStatusReasonCodes\"> </a><a name=\"PCTContributorTaskStatusReasonCodes-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html\"><code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTTaskStatusReasonCSTemporaryTrialUse</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html#PCTTaskStatusReasonCSTemporaryTrialUse-fulfilled\">fulfilled</a></td><td style=\"color: #cccccc\">Fulfilled</td><td>The GFE Request was fulfilled.</td></tr><tr><td><a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html#PCTTaskStatusReasonCSTemporaryTrialUse-schedule\">schedule</a></td><td style=\"color: #cccccc\">Schedule</td><td>Provider cannot participate due to proposed schedule dates and or times.</td></tr><tr><td><a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html#PCTTaskStatusReasonCSTemporaryTrialUse-service-not-provided\">service-not-provided</a></td><td style=\"color: #cccccc\">Service Not Provided</td><td>Services or Products being requested are not available from this GFE contributor.</td></tr><tr><td><a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html#PCTTaskStatusReasonCSTemporaryTrialUse-time-limit-reached\">time-limit-reached</a></td><td style=\"color: #cccccc\">Time Limit Reached</td><td>The time period to provide the GFE has been reached.</td></tr><tr><td><a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html#PCTTaskStatusReasonCSTemporaryTrialUse-no-longer-needed\">no-longer-needed</a></td><td style=\"color: #cccccc\">No Longer Needed</td><td>The GFE is not longer needed.</td></tr><tr><td><a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html#PCTTaskStatusReasonCSTemporaryTrialUse-service-cancelled\">service-cancelled</a></td><td style=\"color: #cccccc\">Service Cancelled</td><td>Scheduled service was cancelled.</td></tr><tr><td><a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html#PCTTaskStatusReasonCSTemporaryTrialUse-requires-new-request\">requires-new-request</a></td><td style=\"color: #cccccc\">Requires New Request</td><td>Changes need to be made to the request which require the current request be cancelled and a new request be made.</td></tr><tr><td><a href=\"CodeSystem-PCTTaskStatusReasonCSTemporaryTrialUse.html#PCTTaskStatusReasonCSTemporaryTrialUse-patient-declined\">patient-declined</a></td><td style=\"color: #cccccc\">Patient Declined</td><td>Patient has declined to receive a GFE or AEOB.</td></tr></table></li></ul></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -24,12 +24,12 @@
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.48.12"
   }],
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0-draft",
   "name" : "PCTContributorTaskStatusReasonCodes",
   "title" : "PCT GFE Contributor Task Status Reason Codes ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-04-12T09:35:40-07:00",
+  "date" : "2025-06-03T13:32:08+00:00",
   "publisher" : "HL7 International / Financial Management",
   "contact" : [{
     "name" : "HL7 International / Financial Management",
@@ -60,6 +60,21 @@
       },
       {
         "code" : "service-not-provided"
+      },
+      {
+        "code" : "time-limit-reached"
+      },
+      {
+        "code" : "no-longer-needed"
+      },
+      {
+        "code" : "service-cancelled"
+      },
+      {
+        "code" : "requires-new-request"
+      },
+      {
+        "code" : "patient-declined"
       }]
     }]
   }

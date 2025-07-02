@@ -2,8 +2,8 @@
   "resourceType" : "OperationDefinition",
   "id" : "GFE-retrieve",
   "text" : {
-    "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>request</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a> (<a href=\"StructureDefinition-davinci-pct-gfe-coordination-task.html\" title=\"http://hl7.org/fhir/us/davinci-pct/StructureDefinition/davinci-pct-gfe-coordination-task\">PCT GFE Coordination Task</a>)</td><td/><td><div><p>A reference to a GFE Coordination Task.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></td><td/><td><div><p>A GFE Request Collection Bundle containing the GFE Bundles of the submitted GFE Bundles by the GFE Contributors.</p>\n</div></td></tr></table></div>"
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition GFE-retrieve</b></p><a name=\"GFE-retrieve\"> </a><a name=\"hcGFE-retrieve\"> </a><a name=\"GFE-retrieve-en-US\"> </a><p>URL: [base]/Task/[id]/$gfe-retrieve</p><p>Output parameters Profile:<a href=\"StructureDefinition-davinci-pct-gfe-packet.html\">PCT GFE Packet</a></p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a> (<a href=\"StructureDefinition-davinci-pct-gfe-packet.html\" title=\"http://hl7.org/fhir/us/davinci-pct/StructureDefinition/davinci-pct-gfe-packet\">PCT GFE Packet</a>)</td><td/><td><div><p>A GFE Packet containing the GFE Bundles of the submitted GFE Bundles by the GFE Contributors for GFE Contributor Tasks marked as <code>completed</code>, and GFE Missing Bundles for incomplete Tasks.</p>\n</div></td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -20,12 +20,12 @@
     }
   }],
   "url" : "http://hl7.org/fhir/us/davinci-pct/OperationDefinition/GFE-retrieve",
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0-draft",
   "name" : "GFERetrieve",
-  "title" : "Retrieve GFE Collection Bundle",
+  "title" : "Retrieve GFE Packet",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2024-04-12T09:35:40-07:00",
+  "date" : "2025-06-03T13:32:08+00:00",
   "publisher" : "HL7 International / Financial Management",
   "contact" : [{
     "name" : "HL7 International / Financial Management",
@@ -38,7 +38,7 @@
       "value" : "fmlists@lists.hl7.org"
     }]
   }],
-  "description" : "This operation is used by an entity to retrieve a GFE Collection Bundle containing the GFE Bundle(s) and other referenced resources based on a GFE Coordination Task. The only input parameter is the single reference to the GFE Coordination Task resource. The only output is a GFE Collection Bundle.",
+  "description" : "This operation is used by an entity to retrieve a GFE Packet containing the GFE Bundle(s) and other referenced resources based on a GFE Coordination Task. There are no input parameters and the only output is a GFE Packet.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -47,24 +47,18 @@
   }],
   "code" : "gfe-retrieve",
   "base" : "http://hl7.org/fhir/us/davinci-pct/OperationDefinition/GFE-retrieve",
+  "resource" : ["Task"],
   "system" : false,
-  "type" : true,
-  "instance" : false,
+  "type" : false,
+  "instance" : true,
+  "outputProfile" : "http://hl7.org/fhir/us/davinci-pct/StructureDefinition/davinci-pct-gfe-packet",
   "parameter" : [{
-    "name" : "request",
-    "use" : "in",
-    "min" : 1,
-    "max" : "1",
-    "documentation" : "A reference to a GFE Coordination Task.",
-    "type" : "Reference",
-    "targetProfile" : ["http://hl7.org/fhir/us/davinci-pct/StructureDefinition/davinci-pct-gfe-coordination-task"]
-  },
-  {
     "name" : "return",
     "use" : "out",
     "min" : 1,
     "max" : "1",
-    "documentation" : "A GFE Request Collection Bundle containing the GFE Bundles of the submitted GFE Bundles by the GFE Contributors.",
-    "type" : "Bundle"
+    "documentation" : "A GFE Packet containing the GFE Bundles of the submitted GFE Bundles by the GFE Contributors for GFE Contributor Tasks marked as `completed`, and GFE Missing Bundles for incomplete Tasks.",
+    "type" : "Bundle",
+    "targetProfile" : ["http://hl7.org/fhir/us/davinci-pct/StructureDefinition/davinci-pct-gfe-packet"]
   }]
 }

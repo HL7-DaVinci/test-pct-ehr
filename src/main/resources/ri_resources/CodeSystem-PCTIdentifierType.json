@@ -3,7 +3,7 @@
   "id" : "PCTIdentifierType",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTIdentifierType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">INTER<a name=\"PCTIdentifierType-INTER\"> </a></td><td>Intermediary System Identifier</td><td>Identifier assigned by an intermediary system</td></tr><tr><td style=\"white-space:nowrap\">uc<a name=\"PCTIdentifierType-uc\"> </a></td><td>Unique Claim ID</td><td>Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PCTIdentifierType</b></p><a name=\"PCTIdentifierType\"> </a><a name=\"hcPCTIdentifierType\"> </a><a name=\"PCTIdentifierType-en-US\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTIdentifierType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">INTER<a name=\"PCTIdentifierType-INTER\"> </a></td><td>Intermediary System Identifier</td><td>Identifier assigned by an intermediary system</td></tr><tr><td style=\"white-space:nowrap\">uc<a name=\"PCTIdentifierType-uc\"> </a></td><td>Unique Claim ID</td><td>Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -24,12 +24,12 @@
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.16.11"
   }],
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0-draft",
   "name" : "PCTIdentifierType",
   "title" : "PCT Identifier Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-04-12T09:35:40-07:00",
+  "date" : "2025-06-03T13:32:08+00:00",
   "publisher" : "HL7 International / Financial Management",
   "contact" : [{
     "name" : "HL7 International / Financial Management",

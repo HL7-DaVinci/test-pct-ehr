@@ -3,7 +3,7 @@
   "id" : "PCTNetworkStatusCS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTNetworkStatusCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">innetwork<a name=\"PCTNetworkStatusCS-innetwork\"> </a></td><td>In Network</td><td>Indicates an in network status in relation to a patient's coverage</td></tr><tr><td style=\"white-space:nowrap\">outofnetwork<a name=\"PCTNetworkStatusCS-outofnetwork\"> </a></td><td>Out Of Network</td><td>Indicates a not in network status in relation to a patient's coverage</td></tr><tr><td style=\"white-space:nowrap\">negotiated<a name=\"PCTNetworkStatusCS-negotiated\"> </a></td><td>Negotiated Service or Product</td><td>Indicates a special negotiated status in relation to a patient's coverage</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"PCTNetworkStatusCS-other\"> </a></td><td>Other</td><td>Indicates other network status or when a network does not apply</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PCTNetworkStatusCS</b></p><a name=\"PCTNetworkStatusCS\"> </a><a name=\"hcPCTNetworkStatusCS\"> </a><a name=\"PCTNetworkStatusCS-en-US\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTNetworkStatusCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">innetwork<a name=\"PCTNetworkStatusCS-innetwork\"> </a></td><td>In Network</td><td>Indicates an in network status in relation to a patient's coverage</td></tr><tr><td style=\"white-space:nowrap\">outofnetwork<a name=\"PCTNetworkStatusCS-outofnetwork\"> </a></td><td>Out Of Network</td><td>Indicates a not in network status in relation to a patient's coverage</td></tr><tr><td style=\"white-space:nowrap\">negotiated<a name=\"PCTNetworkStatusCS-negotiated\"> </a></td><td>Negotiated Service or Product</td><td>Indicates a special negotiated status in relation to a patient's coverage</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"PCTNetworkStatusCS-other\"> </a></td><td>Other</td><td>Indicates other network status or when a network does not apply</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -24,12 +24,12 @@
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.16.12"
   }],
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0-draft",
   "name" : "PCTNetworkStatusCS",
   "title" : "PCT Network Status",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-04-12T09:35:40-07:00",
+  "date" : "2025-06-03T13:32:08+00:00",
   "publisher" : "HL7 International / Financial Management",
   "contact" : [{
     "name" : "HL7 International / Financial Management",

@@ -1,0 +1,91 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PCTDocumentTypeTemporaryTrialUse",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PCTDocumentTypeTemporaryTrialUse</b></p><a name=\"PCTDocumentTypeTemporaryTrialUse\"> </a><a name=\"hcPCTDocumentTypeTemporaryTrialUse\"> </a><a name=\"PCTDocumentTypeTemporaryTrialUse-en-US\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTDocumentTypeTemporaryTrialUse</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">gfe-packet<a name=\"PCTDocumentTypeTemporaryTrialUse-gfe-packet\"> </a></td><td>GFE Packet</td><td>A Good Faith Estimate (GFE) Packet providing a notification of reasonably expected charges and billing codes for a scheduled or requested item or service. This document type bundle may contain one or more individual GFE (Claim) resources.</td></tr><tr><td style=\"white-space:nowrap\">gfe-bundle<a name=\"PCTDocumentTypeTemporaryTrialUse-gfe-bundle\"> </a></td><td>GFE Bundle</td><td>A Good Faith Estimate (GFE) Bundle GFE Bundle that contains all resources for a Good faith estimate submitted by a single GFE contributing provider. Organizations for both the provider and payer MAY be included. This single contributing provider GFE Bundle may be included in a set of GFE bundles from other providers in a GFE Packet that can then be made available to the patient or sent to a payer for insurance estimation.</td></tr><tr><td style=\"white-space:nowrap\">gfe-information-bundle<a name=\"PCTDocumentTypeTemporaryTrialUse-gfe-information-bundle\"> </a></td><td>GFE Information Bundle</td><td>A Good Faith Estimate (GFE) Informational Bundle that contains the information necessary for GFE contributors to create their estimates. This bundle may for all GFE Contributors or  specific to a single contributor and may include, but is not limited to, the Patient Resource, request resources (such as ServiceRequest, MedicationRequest, and DeviceRequest), Service location information, Coverage and Payer Organization resources (if applicable).</td></tr><tr><td style=\"white-space:nowrap\">aeob-packet<a name=\"PCTDocumentTypeTemporaryTrialUse-aeob-packet\"> </a></td><td>AEOB Packet</td><td>An Advanced Explanation of Benefit (AEOB) Packet providing a notification of reasonably expected charges and billing codes provided by a payer according to the member benefits in relation a Good Faith Estimate (GFE) supplied by one or more providers for a given period of service.  AEOBs need to include which providers are expected to provide treatment, the network status of providers, good faith estimates of cost, cost-sharing and progress towards meeting deductibles and out-of-pocket maximums, as well as whether a service is subject to medical management and relevant disclaimers of estimates; for example, the disclaimer might state that the information provided in the notification is only an estimate based on the items and services reasonably expected, at the time of scheduling (or requesting) and is subject to change.</td></tr><tr><td style=\"white-space:nowrap\">estimate<a name=\"PCTDocumentTypeTemporaryTrialUse-estimate\"> </a></td><td>Estimation Packet</td><td>An estimate of healthcare services, products, costs and/or benefits.</td></tr><tr><td style=\"white-space:nowrap\">pct-gfe-packet<a name=\"PCTDocumentTypeTemporaryTrialUse-pct-gfe-packet\"> </a></td><td>PCT GFE Packet</td><td>Patient Cost Transparency (PCT) Good Faith Estimate (GFE) Packet bundle that contains GFE Bundles from GFE contributors.</td></tr><tr><td style=\"white-space:nowrap\">pct-aeob-packet<a name=\"PCTDocumentTypeTemporaryTrialUse-pct-aeob-packet\"> </a></td><td>PCT AEOB Packet</td><td>Patient Cost Transparency (PCT) Advanced Explanation of Benefit (AEOB) Packet PCT AEOB Packet that contains product and service estimations provided by a payer based on a provider submitted Good Faith Estimate (GFE) and a members coverage and benefits.</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fm"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-pct/ImplementationGuide/hl7.fhir.us.davinci-pct"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTDocumentTypeTemporaryTrialUse",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.16.23"
+  }],
+  "version" : "2.0.0-draft",
+  "name" : "PCTDocumentTypeTemporaryTrialUse",
+  "title" : "PCT Document Types",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-06-03T13:32:08+00:00",
+  "publisher" : "HL7 International / Financial Management",
+  "contact" : [{
+    "name" : "HL7 International / Financial Management",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fm"
+    },
+    {
+      "system" : "email",
+      "value" : "fmlists@lists.hl7.org"
+    }]
+  }],
+  "description" : "Defining codes for types and categories of documents and collections used for Patient Cost Transparency estimates. This CodeSystem is currently defined by this IG, but is anticipated to be temporary. The concepts within are expected to be moved in a future version to a more central terminology specification such as LOINC, which will result in a code system url change and possibly modified codes and definitions.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "copyright" : "This CodeSystem is not copyrighted.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "gfe-packet",
+    "display" : "GFE Packet",
+    "definition" : "A Good Faith Estimate (GFE) Packet providing a notification of reasonably expected charges and billing codes for a scheduled or requested item or service. This document type bundle may contain one or more individual GFE (Claim) resources."
+  },
+  {
+    "code" : "gfe-bundle",
+    "display" : "GFE Bundle",
+    "definition" : "A Good Faith Estimate (GFE) Bundle GFE Bundle that contains all resources for a Good faith estimate submitted by a single GFE contributing provider. Organizations for both the provider and payer MAY be included. This single contributing provider GFE Bundle may be included in a set of GFE bundles from other providers in a GFE Packet that can then be made available to the patient or sent to a payer for insurance estimation."
+  },
+  {
+    "code" : "gfe-information-bundle",
+    "display" : "GFE Information Bundle",
+    "definition" : "A Good Faith Estimate (GFE) Informational Bundle that contains the information necessary for GFE contributors to create their estimates. This bundle may for all GFE Contributors or  specific to a single contributor and may include, but is not limited to, the Patient Resource, request resources (such as ServiceRequest, MedicationRequest, and DeviceRequest), Service location information, Coverage and Payer Organization resources (if applicable)."
+  },
+  {
+    "code" : "aeob-packet",
+    "display" : "AEOB Packet",
+    "definition" : "An Advanced Explanation of Benefit (AEOB) Packet providing a notification of reasonably expected charges and billing codes provided by a payer according to the member benefits in relation a Good Faith Estimate (GFE) supplied by one or more providers for a given period of service.  AEOBs need to include which providers are expected to provide treatment, the network status of providers, good faith estimates of cost, cost-sharing and progress towards meeting deductibles and out-of-pocket maximums, as well as whether a service is subject to medical management and relevant disclaimers of estimates; for example, the disclaimer might state that the information provided in the notification is only an estimate based on the items and services reasonably expected, at the time of scheduling (or requesting) and is subject to change."
+  },
+  {
+    "code" : "estimate",
+    "display" : "Estimation Packet",
+    "definition" : "An estimate of healthcare services, products, costs and/or benefits."
+  },
+  {
+    "code" : "pct-gfe-packet",
+    "display" : "PCT GFE Packet",
+    "definition" : "Patient Cost Transparency (PCT) Good Faith Estimate (GFE) Packet bundle that contains GFE Bundles from GFE contributors."
+  },
+  {
+    "code" : "pct-aeob-packet",
+    "display" : "PCT AEOB Packet",
+    "definition" : "Patient Cost Transparency (PCT) Advanced Explanation of Benefit (AEOB) Packet PCT AEOB Packet that contains product and service estimations provided by a payer based on a provider submitted Good Faith Estimate (GFE) and a members coverage and benefits."
+  }]
+}

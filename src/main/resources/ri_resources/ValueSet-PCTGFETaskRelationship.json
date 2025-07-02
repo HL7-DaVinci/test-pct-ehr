@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "PCTGFETaskRelationship",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PCTGFETaskRelationship</b></p><a name=\"PCTGFETaskRelationship\"> </a><a name=\"hcPCTGFETaskRelationship\"> </a><a name=\"PCTGFETaskRelationship-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-v3-ActRelationshipType.html\"><code>http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-v3-ActRelationshipType.html#v3-ActRelationshipType-PREV\">PREV</a></td><td style=\"color: #cccccc\">has previous instance</td><td>A relationship in which the target act is a predecessor instance to the source act. Generally each of these instances is similar, but no identical. In healthcare coverage it is used to link a claim item to a previous claim item that might have claimed for the same set of services.</td></tr><tr><td><a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-v3-ActRelationshipType.html#v3-ActRelationshipType-RPLC\">RPLC</a></td><td style=\"color: #cccccc\">replaces</td><td>A replacement source act replaces an existing target act. The state of the target act being replaced becomes obselete, but the act is typically still retained in the system for historical reference. The source and target must be of the same type.</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fm"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-pct/ImplementationGuide/hl7.fhir.us.davinci-pct"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/us/davinci-pct/ValueSet/PCTGFETaskRelationship",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.48.39"
+  }],
+  "version" : "2.0.0-draft",
+  "name" : "PCTGFETaskRelationship",
+  "title" : "PCT GFE Task Relationship",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-06-03T13:32:08+00:00",
+  "publisher" : "HL7 International / Financial Management",
+  "contact" : [{
+    "name" : "HL7 International / Financial Management",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fm"
+    },
+    {
+      "system" : "email",
+      "value" : "fmlists@lists.hl7.org"
+    }]
+  }],
+  "description" : "Code expressing a relationship that the source Task has with the referenced GFE Task has with the source GFE Task. ",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType",
+      "concept" : [{
+        "code" : "PREV"
+      },
+      {
+        "code" : "RPLC"
+      }]
+    }]
+  }
+}

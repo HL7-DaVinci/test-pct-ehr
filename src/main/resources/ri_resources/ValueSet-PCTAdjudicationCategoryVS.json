@@ -3,7 +3,7 @@
   "id" : "PCTAdjudicationCategoryVS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-adjudication.html\"><code>http://terminology.hl7.org/CodeSystem/adjudication</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-PCTAdjudicationCategoryCS.html\"><code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTAdjudicationCategoryCS</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PCTAdjudicationCategoryVS</b></p><a name=\"PCTAdjudicationCategoryVS\"> </a><a name=\"hcPCTAdjudicationCategoryVS\"> </a><a name=\"PCTAdjudicationCategoryVS-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-adjudication.html\"><code>http://terminology.hl7.org/CodeSystem/adjudication</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-PCTAdjudicationCategoryCS.html\"><code>http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTAdjudicationCategoryCS</code></a></li></ul></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -24,12 +24,12 @@
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.4.642.40.4.48.7"
   }],
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0-draft",
   "name" : "PCTAdjudicationCategoryVS",
   "title" : "PCT GFE Item Adjudication Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-04-12T09:35:40-07:00",
+  "date" : "2025-06-03T13:32:08+00:00",
   "publisher" : "HL7 International / Financial Management",
   "contact" : [{
     "name" : "HL7 International / Financial Management",
