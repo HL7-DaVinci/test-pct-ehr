@@ -1,0 +1,61 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "aeob-date-of-service",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter aeob-date-of-service</b></p><a name=\"aeob-date-of-service\"> </a><a name=\"hcaeob-date-of-service\"> </a><h2>AEOBDateOfService <a style=\"padding-left: 3px; padding-right: 3px; border: 1px grey solid; font-weight: bold; color: black; background-color: #fff5e6\" href=\"https://hl7.org/fhir/R4/versions.html#std-process\" title=\"Standards Status = Trial Use\">TU</a></h2><p>Parameter <code>aeob-date-of-service</code>:<code>date</code></p><div><p>Select planned date of service</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/explanationofbenefit.html\">ExplanationOfBenefit</a></td></tr><tr><td>Expression</td><td><code>ExplanationOfBenefit.item.serviced</code></td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/explanationofbenefit.html\">ExplanationOfBenefit</a></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fm"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 2,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-pct/ImplementationGuide/hl7.fhir.us.davinci-pct"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-pct/ImplementationGuide/hl7.fhir.us.davinci-pct"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/us/davinci-pct/SearchParameter/aeob-date-of-service",
+  "version" : "2.0.0",
+  "name" : "AEOBDateOfService",
+  "status" : "active",
+  "date" : "2022-12-15",
+  "publisher" : "HL7 International / Financial Management",
+  "contact" : [{
+    "name" : "HL7 International / Financial Management",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fm"
+    },
+    {
+      "system" : "email",
+      "value" : "fmlists@lists.hl7.org"
+    }]
+  }],
+  "description" : "Select planned date of service",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "code" : "aeob-date-of-service",
+  "base" : ["ExplanationOfBenefit"],
+  "type" : "date",
+  "expression" : "ExplanationOfBenefit.item.serviced",
+  "target" : ["ExplanationOfBenefit"]
+}
