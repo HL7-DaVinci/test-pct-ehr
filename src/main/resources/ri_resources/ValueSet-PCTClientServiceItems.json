@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "id" : "PCTClientServiceItems",
+  "url": "http://example.org/fhir/ValueSet/PCTClientServiceItems",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "concept": [
+          {
+            "code": "73722",
+            "display": "Magnetic resonance (eg, proton) imaging, any joint of lower extremity; with contrast material(s)"
+          },
+          {
+            "code": "99213",
+            "display": "Office or other outpatient visit for the evaluation and management of an established patient"
+          },
+          {
+            "code": "93000",
+            "display": "Electrocardiogram, routine ECG with at least 12 leads; with interpretation and report"
+          },
+          {
+            "code": "71020",
+            "display": "Radiologic examination, chest; 2 views"
+          },
+          {
+            "code": "80050",
+            "display": "General health panel"
+          }
+        ]
+      }
+    ]
+  }
+}
