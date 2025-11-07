@@ -1,0 +1,75 @@
+{
+  "resourceType": "ValueSet",
+  "id" : "PCTClientDeviceItems",
+  "url": "http://example.org/fhir/ValueSet/PCTClientDeviceItems",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "74566002",
+            "display": "Crutch"
+          },
+          {
+            "code": "8615009",
+            "display": "Blood electrolyte analyzer"
+          },
+          {
+            "code": "183155004",
+            "display": "Flexible knee support"
+          },
+          {
+            "code": "183172006",
+            "display": "Above knee prosthesis"
+          },
+          {
+            "code": "182579000",
+            "display": "Hip brace"
+          },
+          {
+            "code": "105809003",
+            "display": "Physical restraint equipment AND/OR structure"
+          },
+          {
+            "code": "78886001",
+            "display": "Electronic monitor"
+          },
+          {
+            "code": "37874008",
+            "display": "Continuing positive airway pressure unit"
+          },
+          {
+            "code": "24290003",
+            "display": "Cardiac valve bioprosthesis"
+          },
+          {
+            "code": "68597009",
+            "display": "Support belt"
+          },
+          {
+            "code": "972002",
+            "display": "Air filter, device"
+          },
+          {
+            "code": "882002",
+            "display": "Diagnostic implant"
+          },
+          {
+            "code": "4408003",
+            "display": "Endoscopic camera, device"
+          },
+          {
+            "code": "5159002",
+            "display": "Physiologic monitoring system, device"
+          },
+          {
+            "code": "6012004",
+            "display": "Hearing aid"
+          }
+        ]
+      }
+    ]
+  }
+}
