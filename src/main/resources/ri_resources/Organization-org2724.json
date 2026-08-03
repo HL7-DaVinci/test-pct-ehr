@@ -10,11 +10,27 @@
     },
     "identifier": [
         {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "NPI"
+                    }
+                ]
+            },
             "use": "usual",
             "system": "http://hl7.org/fhir/sid/us-npi",
             "value": "1134102080"
         },
         {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "TAX"
+                    }
+                ]
+            },
             "system": "urn:oid:2.16.840.1.113883.4.4",
             "value": "679123456789"
         },
@@ -68,7 +84,8 @@
             ],
             "city": "Pembroke Pines",
             "state": "FL",
-            "postalCode": "33028"
+            "postalCode": "33028",
+            "country": "US"
         }
     ]
 }

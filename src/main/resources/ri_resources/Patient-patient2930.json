@@ -21,6 +21,7 @@
     ],
     "name": [
         {
+            "text": "Sydney Bingman",
             "family": "Bingman",
             "given": [
                 "Sydney"
@@ -39,6 +40,29 @@
             "city": "LONGWOOD",
             "state": "FL",
             "postalCode": "327505599"
+        }
+    ],
+    "maritalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "U",
+                "display": "unmarried"
+            }
+        ]
+    },
+    "communication": [
+        {
+            "language": {
+                "coding": [
+                    {
+                        "system": "urn:ietf:bcp:47",
+                        "code": "en-US",
+                        "display": "English (United States)"
+                    }
+                ]
+            },
+            "preferred": true
         }
     ]
 }

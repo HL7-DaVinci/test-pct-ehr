@@ -46,9 +46,17 @@ uscoreserver:
   implementationguides:
     hl_7_fhir_us_core:
       installMode: STORE_ONLY
-      packageUrl: https://hl7.org/fhir/us/core/STU3.1.1/package.tgz
+      packageUrl: https://hl7.org/fhir/us/core/STU7/package.tgz
       name: hl7.fhir.us.core
-      version: 3.1.1
+      version: 7.0.0
+      fetchDependencies: false
+      reloadExisting: false
+
+    hl_7_fhir_us_davinci_pct:
+      installMode: STORE_AND_INSTALL
+      packageUrl: https://hl7.org/fhir/us/davinci-pct/STU2.0.1/package.tgz
+      name: hl7.fhir.us.davinci-pct
+      version: 2.0.1
       fetchDependencies: false
       reloadExisting: false
 

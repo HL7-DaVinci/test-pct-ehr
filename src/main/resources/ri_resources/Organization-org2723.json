@@ -10,13 +10,12 @@
     "identifier": [
         {
             "type": {
-            "coding": [
-                {
-                "system": "http://hl7.org/fhir/us/davinci-pct/CodeSystem/PCTOrgIdentifierTypeCS",
-                "code": "ETIN",
-                "display": "Electronic Transmitter Identification Number"
-                }
-            ]
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "ETIN"
+                    }
+                ]
             },
             "value": "ETIN-3208472"
         }
@@ -47,7 +46,8 @@
             ],
             "city": "Jacksonville",
             "state": "FL",
-            "postalCode": "32232-5074"
+            "postalCode": "32232-5074",
+            "country": "US"
         }
     ]
 }
