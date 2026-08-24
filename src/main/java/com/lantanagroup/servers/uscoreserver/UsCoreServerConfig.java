@@ -64,7 +64,7 @@ public class UsCoreServerConfig extends CommonConfig {
   public ServletRegistrationBean<RestfulServer> fhirServletRegistrationBean(RestfulServer restfulServer) {
 
     restfulServer.registerInterceptor(new ResponseHighlighterInterceptor());
-    restfulServer.registerInterceptor(new CapabilityStatementCustomizer(restfulServer.getFhirContext(), "uscoreserver"));
+    restfulServer.registerInterceptor(new CapabilityStatementCustomizer(serverProperties));
 
     restfulServer.registerProviders(
         new DocrefOperation()
